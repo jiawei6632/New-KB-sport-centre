@@ -1,0 +1,54 @@
+<p-card>
+    <form [formGroup]="SignUpform" class="form-container">
+        <!-- Close Button -->
+        <div class="CancelClick">
+            <p-button icon="pi pi-times" styleClass="p-button-text" (click)="CancelClick()"></p-button>
+        </div>
+
+        <!-- Sign Up Heading -->
+        <h1>Sign Up</h1>
+        <h5>Already have a account? <a routerLink="/man/log-in" class="login-link"><strong>Log In</strong></a></h5>
+
+        <!-- Email Field -->
+        <div class="inputField">
+            <label class="col-12">
+                <span class="text-red-400">*&nbsp;</span>Email:
+            </label>
+            <div class="input-field col-12">
+                <input type="email" id="email" name="email" placeholder="--Email--" formControlName="email"/>
+            </div>
+        </div>
+
+        <!-- Password Field -->
+        <div class="inpurField">
+            <label class="col-12">
+                <span class="text-red-400">*&nbsp;</span>Password:
+            </label>
+            <div class="input-field col-12">
+                <p-password id="password" name="password" placeholder="--Password--" formControlName="password" [toggleMask]="true"></p-password>
+            </div>
+        </div>
+
+        <!-- Sign Up Button -->
+        <div class="SignUp">
+            <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="Sign Up" styleClass="signup-btn" [outlined]="true"></p-button>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="terms">
+            <input type="checkbox" id="agreeTerms" formControlName="agreeTerms"/>
+            <label>I agree to the <a class="login-link">Terms of Use</a> and <a class="login-link">Privacy Policy</a></label>
+        </div>
+
+        <!-- Separator -->
+        <div class="separator">
+            <span>or</span>
+        </div>
+
+        <!-- Social Login Options -->
+        <div class="social-buttons">
+            <p-button icon="pi pi-facebook" label="Continue with Facebook" styleClass="social-button facebook"></p-button>
+            <p-button icon="pi pi-google" label="Continue with Google" styleClass="social-button google" [text]="true" [raised]="true"></p-button>
+        </div>
+    </form>
+</p-card>
