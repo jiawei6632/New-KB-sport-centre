@@ -3,24 +3,17 @@ import { ManComponent } from './pages/man/man.component';
 import { LogInComponent } from './pages/log-in/log-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { LayoutComponent } from './layout/layout.component';
-import { HeaderComponent } from './functions/header/header.component';
-// import { NotfoundComponent } from './functions/notfound/notfound.component';
+import { NotfoundComponent } from './functions/notfound/notfound.component';
 
 export const routes: Routes = [
     {
-        path: 'layout',
+        path: '', // 默认路径
         component: LayoutComponent,
         children: [
             {
                 path: 'man',
                 component: ManComponent,
-            }
-        ],
-    },
-    {
-        path: 'header', 
-        component: HeaderComponent,
-        children: [
+            },
             {
                 path: 'log-in',
                 component: LogInComponent,
@@ -31,6 +24,9 @@ export const routes: Routes = [
             },
         ],
     },
-    // { path: '',   redirectTo: '/man.component', pathMatch: 'full' },
-    // { path: '**', component: NotfoundComponent },
+    {
+        path: '**',
+        component: NotfoundComponent,
+    },
 ];
+
