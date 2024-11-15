@@ -2,12 +2,24 @@ import { Routes } from '@angular/router';
 import { ManComponent } from './pages/man/man.component';
 import { LogInComponent } from './pages/log-in/log-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { LayoutComponent } from './layout/layout.component';
+import { HeaderComponent } from './functions/header/header.component';
 // import { NotfoundComponent } from './functions/notfound/notfound.component';
 
 export const routes: Routes = [
     {
-        path: 'man', 
-        component: ManComponent,
+        path: 'layout',
+        component: LayoutComponent,
+        children: [
+            {
+                path: 'man',
+                component: ManComponent,
+            }
+        ],
+    },
+    {
+        path: 'header', 
+        component: HeaderComponent,
         children: [
             {
                 path: 'log-in',

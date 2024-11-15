@@ -1,14 +1,19 @@
 <p-menubar>
   <ng-template pTemplate="start">
     <div class="menu">
-      <a routerLink="/menu"><img [src]="getLogoSrc()" alt="" width="170" /></a>
+      <a routerLink="/man"><img [src]="getLogoSrc()" alt="" width="170" /></a>
       <i class="pi pi-bars ml-2 mt-1" (click)="sidebarVisible1 = true"> </i>
     </div>
   </ng-template>
   <ng-template pTemplate="end">
     <div class="flex flex-row align-items-center gap-2">
       <i class="pi-question-circle"></i>
-      <app-theme></app-theme>
+      <nav>
+        <a class="button" routerLink="/header/sign-up">Sign Up</a> |
+        <a class="button" routerLink="/header/log-in">Log In</a>
+      </nav>
     </div> 
   </ng-template>
-  </p-menubar>
+</p-menubar>
+
+<router-outlet></router-outlet>

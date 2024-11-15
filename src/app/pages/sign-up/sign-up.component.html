@@ -7,7 +7,7 @@
 
         <!-- Sign Up Heading -->
         <h1>Sign Up</h1>
-        <h5>Already have a account? <a routerLink="/man/log-in" class="login-link"><strong>Log In</strong></a></h5>
+        <h5>Already have a account? <a routerLink="/header/log-in" class="login-link"><strong>Log In</strong></a></h5>
 
         <!-- Email Field -->
         <div class="inputField">
@@ -15,7 +15,7 @@
                 <span class="text-red-400">*&nbsp;</span>Email:
             </label>
             <div class="input-field col-12">
-                <input type="email" id="email" name="email" placeholder="--Email--" formControlName="email"/>
+                <input type="email" id="email" name="email" placeholder="--Email--" formControlName="Email"/>
             </div>
         </div>
 
@@ -25,7 +25,7 @@
                 <span class="text-red-400">*&nbsp;</span>Password:
             </label>
             <div class="input-field col-12">
-                <p-password id="password" name="password" placeholder="--Password--" formControlName="password" [toggleMask]="true"></p-password>
+                <p-password id="password" name="password" placeholder="--Password--" formControlName="Password" [toggleMask]="true"></p-password>
             </div>
         </div>
 
@@ -36,7 +36,7 @@
 
         <!-- Terms and Conditions -->
         <div class="terms">
-            <input type="checkbox" id="agreeTerms" formControlName="agreeTerms"/>
+            <input type="checkbox" id="agreeTerms" formControlName="AgreeTerms"/>
             <label>I agree to the <a class="login-link">Terms of Use</a> and <a class="login-link">Privacy Policy</a></label>
         </div>
 
