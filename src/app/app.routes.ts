@@ -7,7 +7,7 @@ import { NotfoundComponent } from './functions/notfound/notfound.component';
 
 export const routes: Routes = [
     {
-        path: '', // 默认路径
+        path: '',
         component: LayoutComponent,
         children: [
             {

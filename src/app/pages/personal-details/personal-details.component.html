@@ -1,85 +1,127 @@
-<p-card>
-    <p-toolbar>
-        <div class="p-toolbar-group-start">
-            <h1>Personal details</h1>
-            <h5>Update your personal information</h5>
-        </div>
-        <div>
-            <p-avatar 
-                image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
-                styleClass="mr-2" 
-                size="xlarge" 
-                shape="circle"
-            />
-        </div>
-    </p-toolbar>
+<p-toolbar>
+  <div class="p-toolbar-group-start">
+    <h1>Personal details</h1>
+    <h5>Update your personal information</h5>
+  </div>
+  <div>
+    <p-avatar 
+      image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+      styleClass="mr-2" 
+      size="xlarge" 
+      shape="circle"/>
+  </div>
+</p-toolbar>
 
-    <form [formGroup]="personalDForm" class="form-container">
-        <div class="detail-item">
-            <span class="label">Name</span>
-            <span class="value"> Jiawei </span>
-            <a href="#" class="edit-link">Edit</a>
-        </div>
-        <div class="detail-item">
-            <span class="label">Display name</span>
-            <span class="value">Choose a display name</span>
-            <a href="#" class="edit-link">Edit</a>
-          </div>
-      
-          <div class="detail-item">
-            <span class="label">Email address</span>
-            <span class="value">
-              towjw-wm23&#64;student.tarc.edu.my
-              <span class="verified-badge">Verified</span>
-            </span>
-            <a href="#" class="edit-link">Edit</a>
-          </div>
-      
-          <div class="detail-item">
-            <span class="label">Phone number</span>
-            <div class="phone-input">
-                <FxtPhoneNumberInput 
-                    #Phone
-                    formControlName="PhoneNumber" 
-                    PlaceHolder="Enter Phone Number" 
-                    [required]="true">
-                </FxtPhoneNumberInput>
-                <div *ngIf="personalDForm.get('PhoneNumber')?.errors && personalDForm.get('PhoneNumber')?.touched">
-                    <div class="text-red-400" *ngIf="personalDForm.get('PhoneNumber')?.errors?.['required']">Phone Number is Required</div>
-                    <div class="text-red-400" *ngIf="personalDForm.get('PhoneNumber')?.errors?.['Invalid']">Phone Number is Invalid</div>
-                </div>
-            </div>
-            <button pButton type="button" label="Save" class="save-btn" aria-label="Save phone number"></button>
-          </div>
-      
-          <div class="detail-item">
-            <span class="label">Date of birth</span>
-            <span class="value">Enter your date of birth</span>
-            <a href="#" class="edit-link">Edit</a>
-          </div>
-      
-          <div class="detail-item">
-            <span class="label">Nationality</span>
-            <span class="value">Select the country/region you're from</span>
-            <a href="#" class="edit-link">Edit</a>
-          </div>
-      
-          <div class="detail-item">
-            <span class="label">Gender</span>
-            <span class="value">Select your gender</span>
-            <a href="#" class="edit-link">Edit</a>
-          </div>
-      
-          <div class="detail-item">
-            <span class="label">Address</span>
-            <span class="value">Add your address</span>
-            <a href="#" class="edit-link">Edit</a>
-          </div>
-      
-          <div class="detail-item">
-            <span class="label">Passport details</span>
-            <span class="value">Not provided</span>
-            <a href="#" class="edit-link">Add passport</a>
-          </div>
-    </form>
-</p-card>
+<div class="separator">
+  <span>or</span>
+</div>
+
+<form [formGroup]="personalDForm" class="form-container">
+  <div class="detail-item">
+    <span class="label">Name</span>
+    <a href="#" class="edit-link" (click)="toggleEdit('Name')">Edit</a>
+    <div *ngIf="isEditingName">
+      <input type="text" pInputText formControlName="Name" />
+    </div>
+  </div>
+
+  <div class="separator">
+    <span>or</span>
+  </div>
+
+  <div class="detail-item">
+    <span class="label">Display name</span>
+    <a href="#" class="edit-link" (click)="toggleEdit('DisplayName')">Edit</a>
+    <div *ngIf="isEditingDisplayName">
+      <input type="text" pInputText formControlName="DisplayName" />
+    </div>
+  </div>
+
+  <div class="separator">
+    <span>or</span>
+  </div>
+
+  <div class="detail-item">
+    <span class="label">Email address</span>
+    <a href="#" class="edit-link" (click)="toggleEdit('Email')">Edit</a>
+    <div *ngIf="isEditingEmail">
+      <input type="email" pInputText formControlName="Email" />
+    </div>
+  </div>
+
+  <div class="separator">
+    <span>or</span>
+  </div>
+
+  <div class="detail-item">
+    <span class="label">Phone number</span>
+    <div class="phone-input">
+      <FxtPhoneNumberInput 
+        #Phone
+        formControlName="PhoneNumber" 
+        PlaceHolder="Enter Phone Number" 
+        [required]="true">
+      </FxtPhoneNumberInput>
+      <div *ngIf="personalDForm.get('PhoneNumber')?.errors && personalDForm.get('PhoneNumber')?.touched">
+        <div class="text-red-400" *ngIf="personalDForm.get('PhoneNumber')?.errors?.['required']">Phone Number is Required</div>
+        <div class="text-red-400" *ngIf="personalDForm.get('PhoneNumber')?.errors?.['Invalid']">Phone Number is Invalid</div>
+      </div>
+    </div>
+    <a href="#" class="edit-link" (click)="toggleEdit('Phone')">Edit</a>
+    <div *ngIf="isEditingPhone">
+      <input type="text" pInputText formControlName="PhoneNumber" />
+    </div>
+  </div>
+
+  <div class="separator">
+    <span>or</span>
+  </div>
+
+  <div class="detail-item">
+    <span class="label">Date of birth</span>
+    <a href="#" class="edit-link" (click)="toggleEdit('DateOfBirth')">Edit</a>
+    <div *ngIf="isEditingDateOfBirth">
+      <input type="date" pInputText formControlName="DateOfBirth" />
+    </div>
+  </div>
+
+  <div class="separator">
+    <span>or</span>
+  </div>
+
+  <div class="detail-item">
+    <span class="label">Gender</span>
+    <a href="#" class="edit-link" (click)="toggleEdit('Gender')">Edit</a>
+    <div *ngIf="isEditingGender">
+      <input type="text" pInputText formControlName="Gender" />
+    </div>
+  </div>
+
+  <div class="separator">
+    <span>or</span>
+  </div>
+
+  <div class="detail-item">
+    <span class="label">Address</span>
+    <a href="#" class="edit-link" (click)="toggleEdit('Address')">Edit</a>
+    <div *ngIf="isEditingAddress">
+      <input type="text" pInputText formControlName="Address" />
+    </div>
+  </div>
+
+  <div class="separator">
+    <span>or</span>
+  </div>
+
+  <div class="detail-item">
+    <span class="label">Password</span>
+    <a href="#" class="edit-link" (click)="toggleEdit('Password')">Change Password</a>
+    <div *ngIf="isEditingPassword">
+      <input type="password" pInputText formControlName="Password" />
+    </div>
+  </div>
+</form>
+
+<div class="separator">
+  <span>or</span>
+</div>

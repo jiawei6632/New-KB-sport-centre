@@ -1,46 +1,60 @@
 :host {
-    display: block;
-  }
-  
-  a {
-    display: flex;
-    padding-left: 0.5em;
-    font-size: 23px;
-    font-weight: 600;
-  }
-  
-  .header {
-    display: block;
-  }
-  
-  :host::ng-deep .p-menubar {
-    margin: 0;
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    min-height: 4rem;
-    box-shadow: #32325d40 0 2px 5px -1px, #0000004d 0 1px 3px -1px;
-  }
-  
-  .menu {
-    padding-left: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  :host::ng-deep i {
-    font-size: 22px;
-  }
-  
-  a {
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  i {
-    cursor: pointer;
-  }
-  
+  display: block;
+}
+
+a {
+  display: inline-block;
+  padding: auto;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header {
+  display: block;
+}
+
+:host::ng-deep .p-menubar {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  min-height: 4rem;
+  box-shadow: #32325d40 0 2px 5px -1px, #0000004d 0 1px 3px -1px;
+}
+
+.menu {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+:host::ng-deep i {
+  font-size: 22px;
+}
+
+i {
+  cursor: pointer;
+}
+
+/* Separator line */
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.separator:before,
+.separator:after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+  margin: 0 10px;
+}

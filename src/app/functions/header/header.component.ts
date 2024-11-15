@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { MenubarModule } from 'primeng/menubar';
 import { ThemeService } from '../../services/theme-service.service';
 import { ThemeComponent } from '../theme/theme.component';
+import { PrimeIcons, MenuItem } from 'primeng/api';
 // import { LoginBtnComponent } from '../login-btn/login-btn.component';
 // import { ProfileComponent } from '../profile/profile.component';
 // import { SidebarComponent } from '../sidebar/sidebar.component';
@@ -12,7 +13,7 @@ import { ThemeComponent } from '../theme/theme.component';
   imports: [
     MenubarModule,
     RouterModule,
-    ThemeComponent
+    ThemeComponent,
     // SidebarComponent,
     // LoginBtnComponent,
     // ProfileComponent,

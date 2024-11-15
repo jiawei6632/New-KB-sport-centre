@@ -1,0 +1,80 @@
+/* Ensure the toolbar groups align properly */
+.p-toolbar-group-start {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Styling for the toolbar avatar */
+  .p-avatar {
+    margin-left: 15px;
+  }
+  
+  /* Form styling for detail items */
+  .form-container {
+    display: flex;
+    flex-direction: column; /* Stack the form items vertically */
+    gap: 1em; /* Add some space between form items */
+    width: 100%;
+  }
+  
+  /* Ensure each form detail item aligns well */
+  .detail-item {
+    display: flex;
+    justify-content: space-between; /* Keep the label and edit link on opposite ends */
+    align-items: center;
+  }
+  
+  .label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .edit-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .edit-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styling for the phone input */
+  .phone-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /* Save button styling */
+  .save-btn {
+    margin-top: 10px;
+  }
+  
+  /* Optional styling for the toolbar */
+  p-toolbar {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Separator line */
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.separator:before,
+.separator:after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px;
+}
+  

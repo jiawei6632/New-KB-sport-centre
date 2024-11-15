@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { CalendarModule } from 'primeng/calendar';
 import { AvatarModule } from 'primeng/avatar';
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 import { DropdownModule } from 'primeng/dropdown'
 import { ToolbarModule } from 'primeng/toolbar';
 import { PhoneNumberFormat, PhoneNumberUtil } from 'google-libphonenumber';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 @Component({
   selector: 'app-personal-details',
   standalone: true,
@@ -18,6 +18,16 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
   styleUrl: './personal-details.component.less'
 })
 export class PersonalDetailsComponent {
+  private activeRoute = inject(ActivatedRoute);
+
+  isEditingName = false;
+  isEditingDisplayName = false;
+  isEditingEmail = false;
+  isEditingPhone = false;
+  isEditingDateOfBirth = false;
+  isEditingGender = false;
+  isEditingAddress = false;
+  isEditingPassword = false;
   personalDForm: FormGroup;
 
   constructor(){
@@ -31,6 +41,19 @@ export class PersonalDetailsComponent {
       Address: new FormGroup('', [Validators.required]),
       ChangePassword: new FormGroup('', [Validators.required, Validators.minLength(6), Validators.maxLength(20)]),
     })
+  }
+
+  toggleEdit(field: string) {
+    switch (field) {
+      case 'Name': this.isEditingName = !this.isEditingName; break;
+      case 'DisplayName': this.isEditingDisplayName = !this.isEditingDisplayName; break;
+      case 'Email': this.isEditingEmail = !this.isEditingEmail; break;
+      case 'PhoneNumber': this.isEditingPhone = !this.isEditingPhone; break;
+      case 'DateOfBirth': this.isEditingDateOfBirth = !this.isEditingDateOfBirth; break;
+      case 'Gender': this.isEditingGender = !this.isEditingGender; break;
+      case 'Address': this.isEditingAddress = !this.isEditingAddress; break;
+      case 'ChangePassword': this.isEditingPassword = !this.isEditingPassword; break;
+    }
   }
 
   SaveUpdateClick() {

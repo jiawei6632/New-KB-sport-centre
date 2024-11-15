@@ -1,17 +1,23 @@
-<p-menubar>
-  <ng-template pTemplate="start">
-    <div class="menu">
-      <a routerLink="/man"><img [src]="getLogoSrc()" alt="" width="170" /></a>
-      <i class="pi pi-bars ml-2 mt-1" (click)="sidebarVisible1 = true"> </i>
-    </div>
-  </ng-template>
-  <ng-template pTemplate="end">
-    <div class="flex flex-row align-items-center gap-2">
-      <i class="pi-question-circle"></i>
-      <nav>
-        <a class="button" routerLink="/sign-up">Sign Up</a> |
-        <a class="button" routerLink="/log-in">Log In</a>
+<div class="header">
+  <p-menubar>
+    <ng-template pTemplate="start">
+      <div class="menu">
+        <a routerLink="/man"><img [src]="getLogoSrc()" alt="" width="170" /></a>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="item" let-item let-root="root">
+    </ng-template>
+    <ng-template pTemplate="end">
+      <nav class="menu-actions">
+        <div class="flex justify-content-between w-full">
+          <i class="pi pi-globe" style="color: blue">language</i>
+          <i class="pi pi-question-circle" style="color: rgb(81, 127, 224)"></i>
+          <!-- Sign Up Button -->
+          <a class="p-button p-button-outlined font-bold mr-2" routerLink="/sign-up">Sign Up</a>
+          <!-- Log In Button -->
+          <a class="p-button font-bold ml-3" routerLink="/log-in">Log In</a>
+        </div>
       </nav>
-    </div> 
-  </ng-template>
-</p-menubar>
+    </ng-template>
+  </p-menubar>
+</div>
