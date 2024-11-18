@@ -9,29 +9,51 @@
         <h1>Sign Up</h1>
         <h5>Already have a account? <a routerLink="/log-in" class="login-link"><strong>Log In</strong></a></h5>
 
-        <!-- Email Field -->
-        <div class="inputField">
-            <label class="col-12">
-                <span class="text-red-400">*&nbsp;</span>Email:
-            </label>
-            <div class="input-field col-12">
-                <input type="email" id="email" name="email" placeholder="--Email--" formControlName="Email"/>
+       <!-- Email Field -->
+       <div class="inputField">
+        <label class="col-12">
+            <span class="text-red-400">*&nbsp;</span>Email:
+        </label>
+        <div class="input-field col-12">
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="--Email--" 
+                formControlName="Email"
+                [ngClass]="{'invalid-input': SignUpform.controls['Email'].invalid && SignUpform.controls['Email'].touched}"
+            />
+            <div *ngIf="SignUpform.controls['Email'].invalid && SignUpform.controls['Email'].touched" class="error-message">
+                <small *ngIf="SignUpform.controls['Email'].errors?.['required']">Email is required.</small>
+                <small *ngIf="SignUpform.controls['Email'].errors?.['email']">Invalid email format.</small>
             </div>
         </div>
+    </div>
 
-        <!-- Password Field -->
-        <div class="inpurField">
-            <label class="col-12">
-                <span class="text-red-400">*&nbsp;</span>Password:
-            </label>
-            <div class="input-field col-12">
-                <p-password id="password" name="password" placeholder="--Password--" formControlName="Password" [toggleMask]="true"></p-password>
+    <!-- Password Field -->
+    <div class="inpurField">
+        <label class="col-12">
+            <span class="text-red-400">*&nbsp;</span>Password:
+        </label>
+        <div class="input-field col-12">
+            <p-password 
+                id="password" 
+                name="password" 
+                placeholder="--Password--" 
+                formControlName="Password" 
+                [toggleMask]="true">
+            </p-password>
+            <div *ngIf="SignUpform.controls['Password'].invalid && SignUpform.controls['Password'].touched" class="error-message">
+                <small *ngIf="SignUpform.controls['Password'].errors?.['required']">Password is required.</small>
+                <small *ngIf="SignUpform.controls['Password'].errors?.['minlength']">Password must be at least 6 characters.</small>
+                <small *ngIf="SignUpform.controls['Password'].errors?.['maxlength']">Password cannot be longer than 20 characters.</small>
             </div>
         </div>
+    </div>
 
         <!-- Sign Up Button -->
         <div class="SignUp">
-            <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="Sign Up" styleClass="signup-btn" [outlined]="true"></p-button>
+            <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="Sign Up" styleClass="signup-btn" [outlined]="true" [disabled]="SignUpform.invalid"></p-button>
         </div>
 
         <!-- Terms and Conditions -->

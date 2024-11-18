@@ -7,7 +7,7 @@
 
         <!-- Sign Up Heading -->
         <h1>Log In</h1>
-        <h5>Don't have the account yet? <a routerLink="/sign-up" class="sign-up-link"><strong>Sign Up</strong></a></h5>
+        <h5>Don't have an account yet? <a routerLink="/sign-up" class="sign-up-link"><strong>Sign Up</strong></a></h5>
 
         <!-- Email Field -->
         <div class="inputField">
@@ -15,7 +15,18 @@
                 <span class="text-red-400">*&nbsp;</span>Email:
             </label>
             <div class="input-field col-12">
-                <input type="email" id="email" name="email" placeholder="--Email--" formControlName="Email"/>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="--Email--" 
+                    formControlName="Email"
+                    [ngClass]="{'invalid-input': LogInform.controls['Email'].invalid && LogInform.controls['Email'].touched}"
+                />
+                <div *ngIf="LogInform.controls['Email'].invalid && LogInform.controls['Email'].touched" class="error-message">
+                    <small *ngIf="LogInform.controls['Email'].errors?.['required']">Email is required.</small>
+                    <small *ngIf="LogInform.controls['Email'].errors?.['email']">Invalid email format.</small>
+                </div>
             </div>
         </div>
 
@@ -25,16 +36,34 @@
                 <span class="text-red-400">*&nbsp;</span>Password:
             </label>
             <div class="input-field col-12">
-                <p-password id="password" name="password" placeholder="--Password--" formControlName="Password" [toggleMask]="true"></p-password>
+                <p-password 
+                    id="password" 
+                    name="password" 
+                    placeholder="--Password--" 
+                    formControlName="Password" 
+                    [toggleMask]="true">
+                </p-password>
+                <div *ngIf="LogInform.controls['Password'].invalid && LogInform.controls['Password'].touched" class="error-message">
+                    <small *ngIf="LogInform.controls['Password'].errors?.['required']">Password is required.</small>
+                    <small *ngIf="LogInform.controls['Password'].errors?.['minlength']">Password must be at least 6 characters.</small>
+                    <small *ngIf="LogInform.controls['Password'].errors?.['maxlength']">Password cannot be longer than 20 characters.</small>
+                </div>
             </div>
         </div>
 
-        <!-- Sign Up Button -->
+        <!-- Login Button -->
         <div class="LogIn">
-            <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="Log In" styleClass="login-btn" [outlined]="true"></p-button>
+            <p-button 
+                pRipple 
+                (click)="SaveUpdateClick()" 
+                type="submit" 
+                label="Log In" 
+                styleClass="login-btn" 
+                [outlined]="true"
+                [disabled]="LogInform.invalid">
+            </p-button>
         </div>
 
-        <!-- Terms and Conditions -->
         <div class="terms">
             <input type="checkbox" id="agreeTerms" formControlName="AgreeTerms"/>
             <label>I agree to the <a class="sign-up-link">Terms of Use</a> and <a class="sign-up-link">Privacy Policy</a></label>
