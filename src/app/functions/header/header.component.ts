@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenubarModule } from 'primeng/menubar';
+import { ManComponent } from '../../pages/man/man.component';
 // import { ThemeComponent } from '../theme/theme.component';
 import { PrimeIcons, MenuItem } from 'primeng/api';
 // import { LoginBtnComponent } from '../login-btn/login-btn.component';
@@ -12,6 +13,7 @@ import { PrimeIcons, MenuItem } from 'primeng/api';
   imports: [
     MenubarModule,
     RouterModule,
+    ManComponent,
     // ThemeComponent,
     // SidebarComponent,
     // LoginBtnComponent,

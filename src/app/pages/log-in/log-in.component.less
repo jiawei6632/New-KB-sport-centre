@@ -1,1 +1,235 @@
-@import "src/app/styles/login-signup.less"; 
+/* Style for the p-card */
+p-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    position: relative;
+    
+}
+
+/* Positioning the cancel button at the top-right inside the p-card */
+.CancelClick {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+/* Headings styles */
+h1 {
+    -webkit-text-fill-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+/* Style for the Sign Up link */
+.sign-up-link {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sign-up-link:hover {
+    text-decoration: underline;
+}
+
+/* Style for the Log In link */
+.login-link {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Style for the terms section */
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.terms label {
+    margin-left: 5px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Responsive columns (for larger screens) */
+.md\:col-3 {
+    flex-basis: 30%;
+}
+
+.md\:col-9 {
+    flex-basis: 70%;
+}
+
+/* LogIn button container */
+.LogIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* SignUp button container */
+.SignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.invalid-input {
+    border: 1px solid red;
+}
+  
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+}  
+
+/* Ensuring the LogIn Up button spans the full width */
+p-button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+/* Add spacing between form fields */
+form {
+    width: 100%;
+    max-width: 400px; /* Limit form width for better design */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* Add styles for the checkbox to align the terms agreement */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="email"] {
+    border: 1px solid #ccc; /* Similar border as the password field */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Adjust padding for consistent size */
+    font-size: 16px; /* Match the text size */
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+input[type="email"]:focus {
+    border-color: blue; /* Optional: Add focus state with primary color */
+    outline: none;
+}
+
+.invalid-input {
+    border-color: red; /* Keep the invalid state style for email */
+}
+
+//password field
+.p-password {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-password .p-inputwrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-password .p-inputtext {
+    flex-grow: 1; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.p-password .p-inputtext:focus {
+    border-color: blue;
+    outline: none;
+}
+
+
+/* Separator line */
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.separator:before,
+.separator:after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px;
+}
+
+// /* Social button styling */
+// .social-buttons {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+// }
+
+// .social-button {
+//     width: 100%;
+//     font-weight: bold;
+// }
+
+// .facebook {
+//     background-color: #3b5998;
+//     color: white;
+// }
+
+// .google {
+//     background-color: white;
+//     color: #333;
+//     border: 1px solid #ccc;
+// }
+
+/* 确保登录按钮的宽度与 Facebook 和 Google 按钮相同 */
+.p-button.login-btn {
+    width: 100%; 
+    margin-top: 10px; 
+    font-size: larger;  
+}
+
+/* 社交按钮：Facebook 和 Google */
+.social-buttons .social-button {
+    width: 100%; 
+    font-weight: bold; 
+    margin-top: 10px;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.google {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+

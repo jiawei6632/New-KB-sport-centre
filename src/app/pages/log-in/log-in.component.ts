@@ -1,17 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
-import { PasswordModule } from 'primeng/password';
+import { PasswordModule } from 'primeng/password'; 
 
 @Component({
   selector: 'app-log-in',
   standalone: true,
   imports: [ReactiveFormsModule, ButtonModule, CardModule, PasswordModule, RouterModule, CommonModule],
   templateUrl: './log-in.component.html',
-  styleUrls: ['./log-in.component.less']
+  styleUrls: ['./log-in.component.less'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class LogInComponent {
    LogInform: FormGroup;

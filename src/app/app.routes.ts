@@ -12,7 +12,7 @@ export const routes: Routes = [
         component: LayoutComponent,
         children: [
             {
-                path: 'man',
+                path: '',
                 component: ManComponent,
             },
             {
