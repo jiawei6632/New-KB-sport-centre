@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -11,7 +11,8 @@ import { PasswordModule } from 'primeng/password';
   standalone: true,
   imports: [ReactiveFormsModule, ButtonModule, CardModule, PasswordModule, RouterModule, CommonModule],
   templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.less']
+  styleUrls: ['./sign-up.component.less'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class SignUpComponent {
    SignUpform: FormGroup;
