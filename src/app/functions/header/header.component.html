@@ -10,8 +10,7 @@
     <ng-template pTemplate="end">
       <nav class="menu-actions">
         <div class="flex justify-content-between w-full">
-          <!-- <app-theme></app-theme> -->
-          <i class="pi pi-globe" style="color: rgb(81, 127, 224)">language</i>
+          <i class="pi pi-globe" style="color: rgb(81, 127, 224)" (click)="toggleDropdown($event)">language</i>
           <i class="pi pi-question-circle" style="color: rgb(81, 127, 224)"></i>
           <!-- Sign Up Button -->
           <a class="p-button p-button-outlined font-bold mr-2" routerLink="/sign-up">Sign Up</a>
@@ -21,4 +20,11 @@
       </nav>
     </ng-template>
   </p-menubar>
+
+  <!-- Dropdown for language selection -->
+  <!-- <p-dropdown 
+    [options]="languageOptions" 
+    [(ngModel)]="selectedLanguage"
+    (onChange)="changeLanguage(selectedLanguage)">
+  </p-dropdown> -->
 </div>
