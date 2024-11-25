@@ -5,11 +5,12 @@ import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { PasswordModule } from 'primeng/password';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-sign-up',
   standalone: true,
-  imports: [ReactiveFormsModule, ButtonModule, CardModule, PasswordModule, RouterModule, CommonModule],
+  imports: [ReactiveFormsModule, ButtonModule, CardModule, PasswordModule, RouterModule, CommonModule, TranslocoModule],
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.less'],
   encapsulation: ViewEncapsulation.None,

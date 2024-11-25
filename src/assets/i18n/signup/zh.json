@@ -1,0 +1,18 @@
+{
+    "logIn": "登录",
+    "alreadyHave": "已经有账户了？",
+    "signUp": "注册",
+    "email": "电子邮件：",
+    "password": "密码",
+    "agreeTerms": "我同意",
+    "termsOfUse": "使用条款",
+    "privacyPolicy": "隐私政策",
+    "continueWithFacebook": "使用 Facebook 登录",
+    "continueWithGoogle": "使用 Google 登录",
+    "requiredField": "此字段为必填项。",
+    "invalidEmail": "无效的电子邮件格式。",
+    "passwordMinLength": "密码必须至少包含 6 个字符。",
+    "passwordMaxLength": "密码不能超过 20 个字符。",
+    "and": "和"
+  }
+  

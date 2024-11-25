@@ -1,0 +1,18 @@
+{
+    "logIn": "Log Masuk",
+    "alreadyHave": "Sudah ada akaun? ",
+    "signUp": "Daftar",
+    "email": "Emel: ",
+    "password": "Kata Laluan",
+    "agreeTerms": "Saya bersetuju dengan",
+    "termsOfUse": "Terma Penggunaan",
+    "privacyPolicy": "Dasar Privasi",
+    "continueWithFacebook": "Teruskan dengan Facebook",
+    "continueWithGoogle": "Teruskan dengan Google",
+    "requiredField": "Medan ini diperlukan.",
+    "invalidEmail": "Format emel tidak sah.",
+    "passwordMinLength": "Kata laluan mesti sekurang-kurangnya 6 aksara.",
+    "passwordMaxLength": "Kata laluan tidak boleh lebih daripada 20 aksara.",
+    "and": "dan"
+  }
+  

@@ -1,0 +1,18 @@
+{
+    "logIn": "Log In",
+    "dontHave": "Don't have an account yet? ",
+    "signUp": "Sign Up",
+    "email": "Email: ",
+    "password": "Password",
+    "agreeTerms": "I agree to the",
+    "termsOfUse": "Terms of Use",
+    "privacyPolicy": "Privacy Policy",
+    "continueWithFacebook": "Continue with Facebook",
+    "continueWithGoogle": "Continue with Google",
+    "requiredField": "This field is required.",
+    "invalidEmail": "Invalid email format.",
+    "passwordMinLength": "Password must be at least 6 characters.",
+    "passwordMaxLength": "Password cannot be longer than 20 characters.",
+    "and": "and"
+  }
+  

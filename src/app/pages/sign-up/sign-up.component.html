@@ -6,26 +6,26 @@
         </div>
 
         <!-- Sign Up Heading -->
-        <h1>Sign Up</h1>
-        <h5>Already have a account? <a routerLink="/log-in" class="login-link"><strong>Log In</strong></a></h5>
+        <h1>{{ 'signUp' | transloco }}</h1>
+        <h5>{{ 'alreadyHave' | transloco }}<a routerLink="/log-in" class="login-link"><strong>{{ 'logIn' | transloco }}</strong></a></h5>
 
        <!-- Email Field -->
        <div class="inputField">
         <label class="col-12">
-            <span class="text-red-400">*&nbsp;</span>Email:
+            <span class="text-red-400">*&nbsp;</span>{{ 'email' | transloco }}
         </label>
         <div class="input-field col-12">
             <input 
                 type="email" 
                 id="email" 
                 name="email" 
-                placeholder="--Email--" 
+                placeholder="--{{ 'email' | transloco }}--" 
                 formControlName="Email"
                 [ngClass]="{'invalid-input': SignUpform.controls['Email'].invalid && SignUpform.controls['Email'].touched}"
             />
             <div *ngIf="SignUpform.controls['Email'].invalid && SignUpform.controls['Email'].touched" class="error-message">
-                <small *ngIf="SignUpform.controls['Email'].errors?.['required']">Email is required.</small>
-                <small *ngIf="SignUpform.controls['Email'].errors?.['email']">Invalid email format.</small>
+                <small *ngIf="SignUpform.controls['Email'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+                <small *ngIf="SignUpform.controls['Email'].errors?.['email']">{{ 'invalidEmail' | transloco }}</small>
             </div>
         </div>
     </div>
@@ -33,33 +33,33 @@
     <!-- Password Field -->
     <div class="inpurField">
         <label class="col-12">
-            <span class="text-red-400">*&nbsp;</span>Password:
+            <span class="text-red-400">*&nbsp;</span>{{ 'password' | transloco }}
         </label>
         <div class="input-field col-12">
             <p-password 
                 id="password" 
                 name="password" 
-                placeholder="--Password--" 
+                placeholder="--{{ 'password' | transloco }}--" 
                 formControlName="Password" 
                 [toggleMask]="true">
             </p-password>
             <div *ngIf="SignUpform.controls['Password'].invalid && SignUpform.controls['Password'].touched" class="error-message">
-                <small *ngIf="SignUpform.controls['Password'].errors?.['required']">Password is required.</small>
-                <small *ngIf="SignUpform.controls['Password'].errors?.['minlength']">Password must be at least 6 characters.</small>
-                <small *ngIf="SignUpform.controls['Password'].errors?.['maxlength']">Password cannot be longer than 20 characters.</small>
+                <small *ngIf="SignUpform.controls['Password'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+                <small *ngIf="SignUpform.controls['Password'].errors?.['minlength']">{{ 'passwordMinLength' | transloco }}</small>
+                <small *ngIf="SignUpform.controls['Password'].errors?.['maxlength']">{{ 'passwordMaxLength' | transloco }}</small>
             </div>
         </div>
     </div>
 
         <!-- Sign Up Button -->
         <div class="SignUp">
-            <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="Sign Up" styleClass="signup-btn" [outlined]="true" [disabled]="SignUpform.invalid"></p-button>
+            <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="{{ 'signUp' | transloco }}" styleClass="signup-btn" [outlined]="true" [disabled]="SignUpform.invalid"></p-button>
         </div>
 
         <!-- Terms and Conditions -->
         <div class="terms">
             <input type="checkbox" id="agreeTerms" formControlName="AgreeTerms"/>
-            <label>I agree to the <a routerLink="/terms" class="sign-up-link">Terms of Use</a> and <a routerLink="/privacy-policy" class="sign-up-link">Privacy Policy</a></label>
+            <label>{{ 'agreeTerms' | transloco }} <a routerLink="/terms" class="sign-up-link">{{ 'termsOfUse' | transloco }}</a> {{ 'and' | transloco }} <a routerLink="/privacy-policy" class="sign-up-link">{{ 'privacyPolicy' | transloco }}</a></label>
         </div>
 
         <!-- Separator -->
@@ -69,8 +69,8 @@
 
         <!-- Social Login Options -->
         <div class="social-buttons">
-            <p-button icon="pi pi-facebook" label="Continue with Facebook" styleClass="social-button facebook"></p-button>
-            <p-button icon="pi pi-google" label="Continue with Google" styleClass="social-button google" [text]="true" [raised]="true"></p-button>
+            <p-button icon="pi pi-facebook" label="{{ 'continueWithFacebook' | transloco }}" styleClass="social-button facebook"></p-button>
+            <p-button icon="pi pi-google" label="{{ 'continueWithGoogle' | transloco }}" styleClass="social-button google" [text]="true" [raised]="true"></p-button>
         </div>
     </form>
 </p-card>
