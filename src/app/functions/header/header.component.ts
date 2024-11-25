@@ -3,9 +3,11 @@ import { RouterModule } from '@angular/router';
 import { MenubarModule } from 'primeng/menubar';
 import { ManComponent } from '../../pages/man/man.component';
 import { PrimeIcons, MenuItem } from 'primeng/api';
-import { TranslocoService } from '@ngneat/transloco'; // Import Transloco service
-import { DropdownModule } from 'primeng/dropdown'; // Import Dropdown module
+import { TranslocoService } from '@ngneat/transloco';
+import { DropdownModule } from 'primeng/dropdown'; 
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { TranslocoComponent } from '../transloco/transloco.component';
 
 @Component({
   standalone: true,
@@ -15,6 +17,8 @@ import { FormsModule } from '@angular/forms';
     ManComponent,
     DropdownModule,
     FormsModule,
+    CommonModule,
+    TranslocoComponent
   ],
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -24,7 +28,7 @@ export class HeaderComponent {
   languageOptions = [
     { label: 'English', value: 'en' },
     { label: '中文', value: 'zh' },
-    { label: 'Spanish', value: 'es' },
+    { label: 'Melayu', value: 'ms' },
   ];
 
   selectedLanguage: string = 'en'; // Default language

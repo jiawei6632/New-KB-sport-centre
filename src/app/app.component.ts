@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { ManComponent } from './pages/man/man.component.js';
-import { HeaderComponent } from './functions/header/header.component.js';
-import { LayoutComponent } from "./layout/layout.component";
-import { PersonalDetailsComponent } from "./pages/personal-details/personal-details.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, ManComponent, HeaderComponent, LayoutComponent, PersonalDetailsComponent],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, CommonModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })

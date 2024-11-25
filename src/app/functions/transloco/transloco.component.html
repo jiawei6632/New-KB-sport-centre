@@ -1,6 +1,29 @@
-<div class="language-switcher">
-    <button (click)="changeLanguage('en')">English</button>
-    <button (click)="changeLanguage('zh')">中文</button>
-    <button (click)="changeLanguage('ms')">Bahasa Melayu</button>
+<!-- <div class="language-switcher">
+  <ul>
+    <li>
+      <i
+        class="pi pi-globe"
+        style="color: rgb(81, 127, 224); cursor: pointer;"
+        (click)="toggleDropdown($event)"
+      >
+        Language
+      </i>
+      <ul *ngIf="isDropdownVisible">
+        <li *ngFor="let option of languageOptions" (click)="changeLanguage(option.value)">
+          {{ option.label }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div> -->
+<!-- Example template -->
+<div (click)="toggleDropdown($event)" class="dropdown-container">
+  <button>{{ selectedLanguage }}</button>
+  <div *ngIf="isDropdownVisible" class="dropdown-menu">
+    <ul>
+      <li *ngFor="let option of languageOptions" (click)="changeLanguage(option.value)">
+        {{ option.label }}
+      </li>
+    </ul>
   </div>
-  
+</div>

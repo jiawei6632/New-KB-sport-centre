@@ -1,0 +1,126 @@
+{
+    "terms": {
+      "title": "Terma dan Syarat",
+      "lastUpdated": "Dikemas kini Terakhir",
+      "introduction": {
+        "title": "1. Pengenalan",
+        "content": "Selamat datang ke New KB Sport Center! Terma dan syarat ini mengawal penggunaan aplikasi dan perkhidmatan kami. Dengan mengakses atau menggunakan aplikasi New KB Sport Center, anda bersetuju untuk mematuhi dan terikat dengan terma-terma ini. Jika anda tidak bersetuju dengan mana-mana terma, sila elakkan menggunakan aplikasi ini."
+      },
+      "definitions": {
+        "title": "2. Definisi",
+        "content": {
+          "app": "\"Aplikasi\" merujuk kepada aplikasi mudah alih dan web New KB Sport Center.",
+          "user": "\"Pengguna\" merujuk kepada individu yang menggunakan aplikasi kami, termasuk ahli, jurulatih, dan kakitangan.",
+          "services": "\"Perkhidmatan\" merujuk kepada semua perkhidmatan yang ditawarkan oleh New KB Sport Center, termasuk keahlian, tempahan kemudahan, pendaftaran kelas, dan pilihan pembayaran.",
+          "provider": "\"Penyedia\" merujuk kepada entiti yang menawarkan perkhidmatan, iaitu New KB Sport Center."
+        }
+      },
+      "userRightsAndResponsibilities": {
+        "title": "3. Hak dan Tanggungjawab Pengguna",
+        "accountCreation": {
+          "title": "Penciptaan Akaun",
+          "content": "Untuk mengakses perkhidmatan tertentu, anda mesti mencipta akaun dengan maklumat yang tepat dan lengkap. Anda bertanggungjawab untuk menjaga kerahsiaan kelayakan akaun anda."
+        },
+        "userObligations": {
+          "title": "Kewajipan Pengguna",
+          "content": "Anda bersetuju untuk menggunakan aplikasi hanya untuk tujuan yang sah, menghormati semua undang-undang dan peraturan yang berkenaan. Anda tidak boleh terlibat dalam aktiviti yang berbahaya seperti spam, gangguan, atau memuat naik kandungan haram."
+        },
+        "prohibitedUses": {
+          "title": "Penggunaan yang Dilarang",
+          "content": "Anda dilarang menggunakan aplikasi untuk sebarang aktiviti yang menyalahi undang-undang, berbahaya, atau penipuan."
+        }
+      },
+      "licenseAndOwnership": {
+        "title": "4. Lesen dan Pemilikan",
+        "licenseGrant": {
+          "title": "Pemberian Lesen",
+          "content": "Kami memberikan anda lesen yang terhad, bukan eksklusif, tidak boleh dipindah milik untuk mengakses dan menggunakan aplikasi mengikut Terma dan Syarat ini."
+        },
+        "intellectualProperty": {
+          "title": "Harta Intelek",
+          "content": "Semua kandungan, ciri, dan fungsi aplikasi, termasuk tanda dagangan, logo, dan perisian, adalah milik New KB Sport Center dan dilindungi oleh undang-undang harta intelek."
+        }
+      },
+      "privacyAndDataUsage": {
+        "title": "5. Privasi dan Penggunaan Data",
+        "content": "Privasi anda adalah penting kepada kami. Dengan menggunakan aplikasi ini, anda bersetuju dengan pengumpulan, penggunaan, dan perkongsian data peribadi anda seperti yang diterangkan dalam Dasar Privasi kami. Ini boleh termasuk data untuk tujuan seperti pengurusan keahlian, tempahan kemudahan, pembayaran, dan analitik."
+      },
+      "userGeneratedContent": {
+        "title": "6. Kandungan yang Dihasilkan Pengguna",
+        "content": {
+          "ownership": {
+            "title": "Pemilikan Kandungan",
+            "content": "Sebarang kandungan yang anda cipta atau muat naik melalui aplikasi (seperti ulasan atau pos) kekal menjadi hak milik anda, tetapi anda memberikan New KB Sport Center lesen tidak eksklusif, sejagat, bebas royalti untuk menggunakan, memaparkan, dan mengedarkan kandungan tersebut sebagai sebahagian daripada perkhidmatan kami."
+          },
+          "removal": {
+            "title": "Pembuangan Kandungan",
+            "content": "Kami berhak untuk mengalih keluar sebarang kandungan yang dihasilkan pengguna yang melanggar polisi kami atau undang-undang yang berkenaan."
+          }
+        }
+      },
+      "subscriptionAndPayment": {
+        "title": "7. Pelan Langganan dan Pembayaran",
+        "subscriptionPlans": {
+          "title": "Pelan Langganan",
+          "content": "Dengan mendaftar untuk keahlian atau menempah perkhidmatan, anda bersetuju dengan yuran langganan yang berkenaan dan terma pembayaran. Yuran langganan akan ditagih mengikut pelan yang dipilih, dan kami mungkin mengubah harga dengan notis terdahulu."
+        },
+        "payment": {
+          "title": "Pembayaran",
+          "content": "Pembayaran boleh dibuat melalui kad kredit, PayPal, atau kaedah lain yang tersedia. Sebarang isu pembayaran harus diselesaikan dengan menghubungi pasukan sokongan kami."
+        },
+        "refundsAndCancellations": {
+          "title": "Pemulangan dan Pembatalan",
+          "content": "Pemulangan untuk keahlian dan tempahan adalah tertakluk kepada polisi pemulangan kami. Anda boleh membatalkan perkhidmatan mengikut terma yang disediakan dalam aplikasi."
+        }
+      },
+      "termAndTermination": {
+        "title": "8. Tempoh dan Penamatan",
+        "accountTermination": {
+          "title": "Penamatan Akaun",
+          "content": "Kami berhak untuk menggantung atau menamatkan akaun anda jika anda melanggar Terma dan Syarat ini atau menyalahgunakan aplikasi."
+        },
+        "terminationOfService": {
+          "title": "Penamatan Perkhidmatan",
+          "content": "New KB Sport Center boleh, mengikut budi bicara kami, menggantung atau menghentikan perkhidmatan sama ada sementara atau secara tetap. Kami akan memberi notis kepada pengguna sekiranya boleh."
+        }
+      },
+      "limitationsOfLiability": {
+        "title": "9. Had Tanggungjawab",
+        "content": "Sejauh yang dibenarkan oleh undang-undang, New KB Sport Center tidak akan bertanggungjawab atas sebarang kerosakan langsung, tidak langsung, kebetulan, atau berbangkit yang berpunca dari penggunaan atau ketidakupayaan untuk menggunakan aplikasi, termasuk tetapi tidak terhad kepada kehilangan data atau gangguan perkhidmatan."
+      },
+      "disputeResolution": {
+        "title": "10. Penyelesaian Pertikaian",
+        "governingLaw": {
+          "title": "Undang-Undang yang Mengawal",
+          "content": "Terma dan Syarat ini dikawal oleh undang-undang negara tempat New KB Sport Center beroperasi."
+        },
+        "arbitration": {
+          "title": "Arbitraj",
+          "content": "Sebarang pertikaian yang tidak dapat diselesaikan dengan baik akan ditangani melalui arbitraj, dan anda bersetuju untuk tunduk kepada bidang kuasa eksklusif proses arbitraj."
+        }
+      },
+      "amendments": {
+        "title": "11. Pindaan",
+        "content": "New KB Sport Center berhak untuk mengemas kini atau mengubah Terma dan Syarat ini pada bila-bila masa. Sebarang perubahan akan diberitahu melalui pemberitahuan dalam aplikasi, dan penggunaan aplikasi yang berterusan menunjukkan penerimaan anda terhadap terma yang dikemas kini."
+      },
+      "contactInformation": {
+        "title": "12. Maklumat Hubungan",
+        "content": {
+          "email": "Untuk sebarang soalan atau kebimbangan mengenai Terma dan Syarat ini, sila hubungi kami di: support@newkbsportcenter.com",
+          "phone": "Telefon: +123-456-7890"
+        }
+      },
+      "miscellaneous": {
+        "title": "13. Lain-lain",
+        "forceMajeure": {
+          "title": "Force Majeure",
+          "content": "New KB Sport Center tidak akan bertanggungjawab atas kelewatan atau kegagalan untuk melaksanakan disebabkan oleh keadaan di luar kawalan kami."
+        },
+        "severability": {
+          "title": "Keterpisahan",
+          "content": "Jika mana-mana bahagian Terma dan Syarat ini didapati tidak sah atau tidak boleh dikuatkuasakan, baki terma akan tetap berkuatkuasa sepenuhnya."
+        }
+      }
+    }
+  }
+  

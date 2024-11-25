@@ -1,0 +1,126 @@
+{
+    "terms": {
+      "title": "Terms and Conditions",
+      "lastUpdated": "Last Updated",
+      "introduction": {
+        "title": "1. Introduction",
+        "content": "Welcome to New KB Sport Center! These Terms and Conditions govern your use of our application and services. By accessing or using the New KB Sport Center app, you agree to comply with and be bound by these terms. If you do not agree with any of these terms, please refrain from using the app."
+      },
+      "definitions": {
+        "title": "2. Definitions",
+        "content": {
+          "app": "\"App\" refers to the New KB Sport Center mobile and web application.",
+          "user": "\"User\" refers to individuals who use our app, including members, trainers, and staff.",
+          "services": "\"Services\" refers to all services offered by New KB Sport Center, including membership, facility booking, class enrollment, and payment options.",
+          "provider": "\"Provider\" refers to the entity offering the services, i.e., New KB Sport Center."
+        }
+      },
+      "userRightsAndResponsibilities": {
+        "title": "3. User Rights and Responsibilities",
+        "accountCreation": {
+          "title": "Account Creation",
+          "content": "To access certain services, you must create an account with accurate, complete information. You are responsible for maintaining the confidentiality of your account credentials."
+        },
+        "userObligations": {
+          "title": "User Obligations",
+          "content": "You agree to use the app for lawful purposes only, respecting all applicable laws and regulations. You must not engage in harmful activities such as spamming, harassment, or uploading illegal content."
+        },
+        "prohibitedUses": {
+          "title": "Prohibited Uses",
+          "content": "You are prohibited from using the app for any unlawful, harmful, or fraudulent activities."
+        }
+      },
+      "licenseAndOwnership": {
+        "title": "4. License and Ownership",
+        "licenseGrant": {
+          "title": "License Grant",
+          "content": "We grant you a limited, non-exclusive, non-transferable license to access and use the app in accordance with these Terms and Conditions."
+        },
+        "intellectualProperty": {
+          "title": "Intellectual Property",
+          "content": "All content, features, and functionality of the app, including trademarks, logos, and software, are owned by New KB Sport Center and are protected by intellectual property laws."
+        }
+      },
+      "privacyAndDataUsage": {
+        "title": "5. Privacy and Data Usage",
+        "content": "Your privacy is important to us. By using the app, you consent to the collection, use, and sharing of your personal data as outlined in our Privacy Policy. This may include data for purposes like membership management, facility booking, payments, and analytics."
+      },
+      "userGeneratedContent": {
+        "title": "6. User-Generated Content",
+        "content": {
+          "ownership": {
+            "title": "Content Ownership",
+            "content": "Any content you create or upload through the app (such as reviews or posts) remains your property, but you grant New KB Sport Center a non-exclusive, worldwide, royalty-free license to use, display, and distribute such content as part of our services."
+          },
+          "removal": {
+            "title": "Content Removal",
+            "content": "We reserve the right to remove any user-generated content that violates our policies or applicable laws."
+          }
+        }
+      },
+      "subscriptionAndPayment": {
+        "title": "7. Subscription and Payment",
+        "subscriptionPlans": {
+          "title": "Subscription Plans",
+          "content": "By registering for membership or booking services, you agree to the applicable subscription fees and payment terms. Subscription fees are billed according to the selected plan, and we may modify prices with prior notice."
+        },
+        "payment": {
+          "title": "Payment",
+          "content": "Payments can be made via credit card, PayPal, or other available methods. Any payment issues should be resolved by contacting our support team."
+        },
+        "refundsAndCancellations": {
+          "title": "Refunds and Cancellations",
+          "content": "Refunds for memberships and bookings are subject to our refund policy. You can cancel services according to the terms provided in the app."
+        }
+      },
+      "termAndTermination": {
+        "title": "8. Term and Termination",
+        "accountTermination": {
+          "title": "Account Termination",
+          "content": "We reserve the right to suspend or terminate your account if you violate these Terms and Conditions or misuse the app."
+        },
+        "terminationOfService": {
+          "title": "Termination of Service",
+          "content": "New KB Sport Center may, at its discretion, suspend or discontinue services temporarily or permanently. We will notify users in advance if possible."
+        }
+      },
+      "limitationsOfLiability": {
+        "title": "9. Limitations of Liability",
+        "content": "To the fullest extent permitted by law, New KB Sport Center shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use the app, including but not limited to data loss or service interruptions."
+      },
+      "disputeResolution": {
+        "title": "10. Dispute Resolution",
+        "governingLaw": {
+          "title": "Governing Law",
+          "content": "These Terms and Conditions are governed by the laws of the country where New KB Sport Center operates."
+        },
+        "arbitration": {
+          "title": "Arbitration",
+          "content": "Any disputes that cannot be resolved amicably will be handled through arbitration, and you agree to submit to the exclusive jurisdiction of the arbitration process."
+        }
+      },
+      "amendments": {
+        "title": "11. Amendments",
+        "content": "New KB Sport Center reserves the right to update or modify these Terms and Conditions at any time. Any changes will be communicated via in-app notifications, and continued use of the app signifies your acceptance of the updated terms."
+      },
+      "contactInformation": {
+        "title": "12. Contact Information",
+        "content": {
+          "email": "For any questions or concerns regarding these Terms and Conditions, please contact us at: support@newkbsportcenter.com",
+          "phone": "Phone: +123-456-7890"
+        }
+      },
+      "miscellaneous": {
+        "title": "13. Miscellaneous",
+        "forceMajeure": {
+          "title": "Force Majeure",
+          "content": "New KB Sport Center shall not be held responsible for delays or failure to perform due to circumstances beyond its control."
+        },
+        "severability": {
+          "title": "Severability",
+          "content": "If any part of these Terms and Conditions is deemed invalid or unenforceable, the remainder will remain in full effect."
+        }
+      }
+    }
+  }
+  

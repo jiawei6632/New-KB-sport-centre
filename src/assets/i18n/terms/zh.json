@@ -1,0 +1,126 @@
+{
+    "terms": {
+      "title": "条款和条件",
+      "lastUpdated": "最后更新",
+      "introduction": {
+        "title": "1. 介绍",
+        "content": "欢迎使用 New KB Sport Center！这些条款和条件规范您对我们应用程序和服务的使用。通过访问或使用 New KB Sport Center 应用程序，您同意遵守并受这些条款的约束。如果您不同意这些条款，请避免使用该应用程序。"
+      },
+      "definitions": {
+        "title": "2. 定义",
+        "content": {
+          "app": "\"应用程序\"指的是 New KB Sport Center 移动和网页应用。",
+          "user": "\"用户\"指使用我们应用程序的个人，包括会员、教练和工作人员。",
+          "services": "\"服务\"指 New KB Sport Center 提供的所有服务，包括会员资格、设施预定、课程报名和支付选项。",
+          "provider": "\"服务提供者\"指提供服务的实体，即 New KB Sport Center。"
+        }
+      },
+      "userRightsAndResponsibilities": {
+        "title": "3. 用户权利和责任",
+        "accountCreation": {
+          "title": "账户创建",
+          "content": "要访问某些服务，您必须创建一个准确、完整的信息账户。您有责任保持账户凭证的机密性。"
+        },
+        "userObligations": {
+          "title": "用户义务",
+          "content": "您同意仅为合法目的使用该应用程序，遵守所有适用的法律和规定。您不得从事恶意活动，如垃圾邮件、骚扰或上传非法内容。"
+        },
+        "prohibitedUses": {
+          "title": "禁止使用",
+          "content": "您禁止将该应用程序用于任何非法、有害或欺诈活动。"
+        }
+      },
+      "licenseAndOwnership": {
+        "title": "4. 许可和所有权",
+        "licenseGrant": {
+          "title": "许可授予",
+          "content": "我们授予您一个有限的、非独占的、不可转让的许可，允许您根据这些条款和条件访问和使用该应用程序。"
+        },
+        "intellectualProperty": {
+          "title": "知识产权",
+          "content": "应用程序的所有内容、功能和功能，包括商标、标志和软件，均归 New KB Sport Center 所有，并受到知识产权法的保护。"
+        }
+      },
+      "privacyAndDataUsage": {
+        "title": "5. 隐私和数据使用",
+        "content": "您的隐私对我们非常重要。通过使用该应用程序，您同意按照我们的隐私政策收集、使用和共享您的个人数据。这可能包括用于会员管理、设施预订、支付和分析的数据。"
+      },
+      "userGeneratedContent": {
+        "title": "6. 用户生成内容",
+        "content": {
+          "ownership": {
+            "title": "内容所有权",
+            "content": "您通过应用程序创建或上传的任何内容（如评论或帖子）仍然是您的财产，但您授予 New KB Sport Center 一个非独占、全球范围的免版税许可，以使用、展示和分发这些内容作为我们服务的一部分。"
+          },
+          "removal": {
+            "title": "内容移除",
+            "content": "我们保留删除任何违反我们政策或适用法律的用户生成内容的权利。"
+          }
+        }
+      },
+      "subscriptionAndPayment": {
+        "title": "7. 订阅和支付",
+        "subscriptionPlans": {
+          "title": "订阅计划",
+          "content": "通过注册成为会员或预订服务，您同意适用的订阅费用和支付条款。订阅费用将根据所选计划进行计费，我们可能会提前通知修改价格。"
+        },
+        "payment": {
+          "title": "支付",
+          "content": "支付可以通过信用卡、PayPal 或其他可用的方式进行。任何支付问题应通过联系我们的支持团队解决。"
+        },
+        "refundsAndCancellations": {
+          "title": "退款和取消",
+          "content": "会员和预订的退款受我们的退款政策限制。您可以根据应用程序中的条款取消服务。"
+        }
+      },
+      "termAndTermination": {
+        "title": "8. 期限和终止",
+        "accountTermination": {
+          "title": "账户终止",
+          "content": "如果您违反这些条款和条件或滥用该应用程序，我们保留暂停或终止您的账户的权利。"
+        },
+        "terminationOfService": {
+          "title": "服务终止",
+          "content": "New KB Sport Center 可以自行决定暂时或永久中止服务。如有可能，我们将提前通知用户。"
+        }
+      },
+      "limitationsOfLiability": {
+        "title": "9. 责任限制",
+        "content": "在法律允许的最大范围内，New KB Sport Center 对因使用或无法使用该应用程序而导致的任何直接、间接、附带或后果性损害不承担责任，包括但不限于数据丢失或服务中断。"
+      },
+      "disputeResolution": {
+        "title": "10. 争议解决",
+        "governingLaw": {
+          "title": "适用法律",
+          "content": "这些条款和条件受 New KB Sport Center 所在国家的法律管辖。"
+        },
+        "arbitration": {
+          "title": "仲裁",
+          "content": "任何无法友好解决的争议将通过仲裁处理，您同意提交至仲裁程序的专属管辖权。"
+        }
+      },
+      "amendments": {
+        "title": "11. 修改",
+        "content": "New KB Sport Center 保留随时更新或修改这些条款和条件的权利。任何更改将通过应用程序内通知进行沟通，继续使用该应用程序即表示您接受更新的条款。"
+      },
+      "contactInformation": {
+        "title": "12. 联系信息",
+        "content": {
+          "email": "如有任何关于这些条款和条件的疑问，请联系我们：support@newkbsportcenter.com",
+          "phone": "电话：+123-456-7890"
+        }
+      },
+      "miscellaneous": {
+        "title": "13. 其他",
+        "forceMajeure": {
+          "title": "不可抗力",
+          "content": "New KB Sport Center 不对因其无法控制的情况造成的延迟或未能履行责任负责。"
+        },
+        "severability": {
+          "title": "可分割性",
+          "content": "如果这些条款和条件的任何部分被认为无效或不可执行，其余部分将继续有效。"
+        }
+      }
+    }
+  }
+  
