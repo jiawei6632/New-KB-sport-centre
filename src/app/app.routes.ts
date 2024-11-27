@@ -7,6 +7,7 @@ import { NotfoundComponent } from './functions/notfound/notfound.component';
 import { PersonalDetailsComponent } from './pages/personal-details/personal-details.component';
 import { PrivacyPolicyComponent } from './Law/privacy-policy/privacy-policy.component';
 import { TermsComponent } from './Law/terms/terms.component';
+import { BookingComponent } from './pages/booking-order/booking-order.component';
 
 export const routes: Routes = [
     {
@@ -36,6 +37,10 @@ export const routes: Routes = [
             {
                 path: 'terms',
                 component: TermsComponent,
+            },
+            {
+                path: 'booking-order',
+                component: BookingComponent,
             }
         ],
     },

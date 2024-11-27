@@ -1,86 +1,85 @@
 {
-    "privacyPolicy": {
-      "title": "Privacy Policy",
-      "lastUpdated": "Last Updated",
-      "sections": {
-        "section1": {
-          "title": "1. Information We Collect",
-          "content": {
-            "intro": "We collect the following types of information:",
-            "list": {
-              "personalInfo": "Personal Information: Such as your name, email address, phone number, and address.",
-              "membershipInfo": "Membership Information: Including your membership ID, fitness records, booking history, etc.",
-              "paymentInfo": "Payment Information: Such as bank account details, credit card information, etc., used for processing payments.",
-              "usageData": "Usage Data: Information about how you use our website or app, including device information, IP address, browser type, etc.",
-              "cookies": "Cookies: We use cookies to enhance your user experience. Cookies help us remember your preferences and improve our services."
-            }
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated",
+    "sections": {
+      "section1": {
+        "title": "1. Information We Collect",
+        "content": {
+          "intro": "We collect the following types of information:",
+          "list": {
+            "personalInfo": "Personal Information: Such as your name, email address, phone number, and address.",
+            "membershipInfo": "Membership Information: Including your membership ID, fitness records, booking history, etc.",
+            "paymentInfo": "Payment Information: Such as bank account details, credit card information, etc., used for processing payments.",
+            "usageData": "Usage Data: Information about how you use our website or app, including device information, IP address, browser type, etc.",
+            "cookies": "Cookies: We use cookies to enhance your user experience. Cookies help us remember your preferences and improve our services."
           }
-        },
-        "section2": {
-          "title": "2. How We Use Your Information",
-          "content": {
-            "intro": "We use the collected information for the following purposes:",
-            "list": {
-              "manageServices": "To provide and manage our sports facilities, classes, bookings, and payment services.",
-              "sendNotifications": "To send you membership notifications, promotional offers, and other relevant information (if you have agreed).",
-              "improveServices": "To improve our services and customer experience.",
-              "preventFraud": "To prevent fraud and ensure the security of our services."
-            }
+        }
+      },
+      "section2": {
+        "title": "2. How We Use Your Information",
+        "content": {
+          "intro": "We use the collected information for the following purposes:",
+          "list": {
+            "manageServices": "To provide and manage our sports facilities, classes, bookings, and payment services.",
+            "sendNotifications": "To send you membership notifications, promotional offers, and other relevant information (if you have agreed).",
+            "improveServices": "To improve our services and customer experience.",
+            "preventFraud": "To prevent fraud and ensure the security of our services."
           }
-        },
-        "section3": {
-          "title": "3. How We Share Your Information",
-          "content": {
-            "intro": "We are committed to not selling or renting your personal information to third parties. However, we may share your information with third parties in the following cases:",
-            "list": {
-              "serviceProviders": "With service providers who assist in operating the website or providing services (such as payment processing, communication, etc.).",
-              "legalRequirements": "To comply with legal requirements or respond to legitimate requests from public authorities."
-            }
+        }
+      },
+      "section3": {
+        "title": "3. How We Share Your Information",
+        "content": {
+          "intro": "We are committed to not selling or renting your personal information to third parties. However, we may share your information with third parties in the following cases:",
+          "list": {
+            "serviceProviders": "With service providers who assist in operating the website or providing services (such as payment processing, communication, etc.).",
+            "legalRequirements": "To comply with legal requirements or respond to legitimate requests from public authorities."
           }
-        },
-        "section4": {
-          "title": "4. Data Security",
-          "content": {
-            "intro": "We take appropriate technical and organizational measures to protect your personal information. However, no method of transmission over the internet can guarantee 100% security, so we cannot ensure the absolute security of your data."
-          }
-        },
-        "section5": {
-          "title": "5. Your Rights",
-          "content": {
-            "intro": "Depending on your location, you may have the following rights:",
-            "list": {
-              "accessData": "To access, update, or delete your personal data.",
-              "withdrawConsent": "To withdraw your consent for data processing at any time.",
-              "restrictProcessing": "To object to or request restrictions on certain data processing activities."
-            },
-            "contact": "To exercise these rights, please contact us at: [Your Contact Information]."
-          }
-        },
-        "section6": {
-          "title": "6. Third-Party Links",
-          "content": {
-            "intro": "Our platform may contain links to third-party websites. We are not responsible for the privacy practices of those websites. We encourage you to read their privacy policies before visiting those sites."
-          }
-        },
-        "section7": {
-          "title": "7. Changes to This Privacy Policy",
-          "content": {
-            "intro": "We may update this Privacy Policy from time to time. Any updates will be posted on this page, with the update date indicated at the top. Please check this policy periodically for any changes to our privacy practices."
-          }
-        },
-        "section8": {
-          "title": "8. Contact Us",
-          "content": {
-            "intro": "If you have any questions or need further assistance regarding this Privacy Policy, please contact us at:",
-            "contactDetails": {
-              "companyName": "New KB Sport Center",
-              "address": "[Company Address]",
-              "email": "[Contact Email]",
-              "phone": "[Contact Phone Number]"
-            }
+        }
+      },
+      "section4": {
+        "title": "4. Data Security",
+        "content": {
+          "intro": "We take appropriate technical and organizational measures to protect your personal information. However, no method of transmission over the internet can guarantee 100% security, so we cannot ensure the absolute security of your data."
+        }
+      },
+      "section5": {
+        "title": "5. Your Rights",
+        "content": {
+          "intro": "Depending on your location, you may have the following rights:",
+          "list": {
+            "accessData": "To access, update, or delete your personal data.",
+            "withdrawConsent": "To withdraw your consent for data processing at any time.",
+            "restrictProcessing": "To object to or request restrictions on certain data processing activities."
+          },
+          "contact": "To exercise these rights, please contact us at: [Your Contact Information]."
+        }
+      },
+      "section6": {
+        "title": "6. Third-Party Links",
+        "content": {
+          "intro": "Our platform may contain links to third-party websites. We are not responsible for the privacy practices of those websites. We encourage you to read their privacy policies before visiting those sites."
+        }
+      },
+      "section7": {
+        "title": "7. Changes to This Privacy Policy",
+        "content": {
+          "intro": "We may update this Privacy Policy from time to time. Any updates will be posted on this page, with the update date indicated at the top. Please check this policy periodically for any changes to our privacy practices."
+        }
+      },
+      "section8": {
+        "title": "8. Contact Us",
+        "content": {
+          "intro": "If you have any questions or need further assistance regarding this Privacy Policy, please contact us at:",
+          "contactDetails": {
+            "companyName": "New KB Sport Center",
+            "address": "[Company Address]",
+            "email": "[Contact Email]",
+            "phone": "[Contact Phone Number]"
           }
         }
       }
     }
   }
-  
+}
