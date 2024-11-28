@@ -1,0 +1,86 @@
+{
+    "privacyPolicy": {
+      "title": "Dasar Privasi",
+      "lastUpdated": "Kemas Kini Terakhir",
+      "sections": {
+        "section1": {
+          "title": "1. Maklumat yang Kami Kumpul",
+          "content": {
+            "intro": "Kami mengumpul jenis maklumat berikut:",
+            "list": {
+              "personalInfo": "Maklumat Peribadi: Seperti nama, alamat e-mel, nombor telefon, dan alamat anda.",
+              "membershipInfo": "Maklumat Keahlian: Termasuk ID keahlian anda, rekod kecergasan, sejarah tempahan, dll.",
+              "paymentInfo": "Maklumat Pembayaran: Seperti butiran akaun bank, maklumat kad kredit, dll., yang digunakan untuk memproses pembayaran.",
+              "usageData": "Data Penggunaan: Maklumat tentang bagaimana anda menggunakan laman web atau aplikasi kami, termasuk maklumat peranti, alamat IP, jenis pelayar, dll.",
+              "cookies": "Cookies: Kami menggunakan cookies untuk meningkatkan pengalaman pengguna anda. Cookies membantu kami mengingati pilihan anda dan meningkatkan perkhidmatan kami."
+            }
+          }
+        },
+        "section2": {
+          "title": "2. Bagaimana Kami Menggunakan Maklumat Anda",
+          "content": {
+            "intro": "Kami menggunakan maklumat yang dikumpul untuk tujuan berikut:",
+            "list": {
+              "manageServices": "Untuk menyediakan dan mengurus kemudahan sukan, kelas, tempahan, dan perkhidmatan pembayaran kami.",
+              "sendNotifications": "Untuk menghantar pemberitahuan keahlian, tawaran promosi, dan maklumat berkaitan lain (jika anda bersetuju).",
+              "improveServices": "Untuk meningkatkan perkhidmatan dan pengalaman pelanggan kami.",
+              "preventFraud": "Untuk mencegah penipuan dan memastikan keselamatan perkhidmatan kami."
+            }
+          }
+        },
+        "section3": {
+          "title": "3. Bagaimana Kami Berkongsi Maklumat Anda",
+          "content": {
+            "intro": "Kami komited untuk tidak menjual atau menyewakan maklumat peribadi anda kepada pihak ketiga. Walau bagaimanapun, kami mungkin berkongsi maklumat anda dengan pihak ketiga dalam kes berikut:",
+            "list": {
+              "serviceProviders": "Dengan penyedia perkhidmatan yang membantu mengendalikan laman web atau menyediakan perkhidmatan (seperti pemprosesan pembayaran, komunikasi, dll.).",
+              "legalRequirements": "Untuk mematuhi keperluan undang-undang atau menjawab permintaan sah dari pihak berkuasa awam."
+            }
+          }
+        },
+        "section4": {
+          "title": "4. Keselamatan Data",
+          "content": {
+            "intro": "Kami mengambil langkah teknikal dan organisasi yang sesuai untuk melindungi maklumat peribadi anda. Walau bagaimanapun, tiada kaedah penghantaran melalui internet yang dapat menjamin keselamatan 100%, jadi kami tidak dapat memastikan keselamatan mutlak data anda."
+          }
+        },
+        "section5": {
+          "title": "5. Hak Anda",
+          "content": {
+            "intro": "Bergantung pada lokasi anda, anda mungkin mempunyai hak-hak berikut:",
+            "list": {
+              "accessData": "Untuk mengakses, mengemas kini, atau memadamkan data peribadi anda.",
+              "withdrawConsent": "Untuk menarik balik persetujuan anda untuk pemprosesan data pada bila-bila masa.",
+              "restrictProcessing": "Untuk membantah atau meminta sekatan terhadap aktiviti pemprosesan data tertentu."
+            },
+            "contact": "Untuk melaksanakan hak ini, sila hubungi kami di: [Maklumat Hubungan Anda]."
+          }
+        },
+        "section6": {
+          "title": "6. Pautan Pihak Ketiga",
+          "content": {
+            "intro": "Platform kami mungkin mengandungi pautan ke laman web pihak ketiga. Kami tidak bertanggungjawab terhadap amalan privasi laman web tersebut. Kami menggalakkan anda untuk membaca dasar privasi mereka sebelum melawati laman web tersebut."
+          }
+        },
+        "section7": {
+          "title": "7. Perubahan kepada Dasar Privasi Ini",
+          "content": {
+            "intro": "Kami mungkin mengemas kini Dasar Privasi ini dari semasa ke semasa. Sebarang kemas kini akan dipaparkan di halaman ini, dengan tarikh kemas kini yang dinyatakan di atas. Sila semak dasar ini secara berkala untuk sebarang perubahan terhadap amalan privasi kami."
+          }
+        },
+        "section8": {
+          "title": "8. Hubungi Kami",
+          "content": {
+            "intro": "Sekiranya anda mempunyai sebarang soalan atau memerlukan bantuan lanjut mengenai Dasar Privasi ini, sila hubungi kami di:",
+            "contactDetails": {
+              "companyName": "New KB Sport Center",
+              "address": "[Alamat Syarikat]",
+              "email": "[Emel Hubungan]",
+              "phone": "[Nombor Telefon Hubungan]"
+            }
+          }
+        }
+      }
+    }
+  }
+  

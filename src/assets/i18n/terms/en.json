@@ -1,7 +1,6 @@
 {
     "terms": {
       "title": "Terms and Conditions",
-      "titles": "Privacy Policy",
       "lastUpdated": "Last Updated",
       "introduction": {
         "title": "1. Introduction",
@@ -122,7 +121,6 @@
           "content": "If any part of these Terms and Conditions is deemed invalid or unenforceable, the remainder will remain in full effect."
         }
       }
-    },
-    "titles": "Privacy Policy"
+    }
   }
   

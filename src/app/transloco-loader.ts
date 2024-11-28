@@ -15,10 +15,11 @@ export class TranslocoHttpLoader implements TranslocoLoader {
         const LogInRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/login/${lang}.json`);
         const SignUpRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/signup/${lang}.json`);
         const BookingSearchRequest = this.http.get<Translation>( `${environment.baseUrl}/assets/i18n/bookingSearch/${lang}.json`);
+        const PrivacyPolicyRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/privacyPolicy/${lang}.json`);
     
-        return forkJoin([termsRequest, headerRequest, LogInRequest, SignUpRequest, BookingSearchRequest]).pipe(
-          map(([terms, header, login, signup, bookingSearch]) => {
-             return { ...terms, ...header, ...login, ...signup, ...bookingSearch };
+        return forkJoin([termsRequest, headerRequest, LogInRequest, SignUpRequest, BookingSearchRequest, PrivacyPolicyRequest]).pipe(
+          map(([terms, header, login, signup, bookingSearch, privacyPolicy]) => {
+             return { ...terms, ...header, ...login, ...signup, ...bookingSearch, ...privacyPolicy };
           })
         );
     }
