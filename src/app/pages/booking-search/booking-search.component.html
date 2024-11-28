@@ -1,0 +1,70 @@
+<div class="container">
+    <header>
+        <h1>{{ "bookingSearchTitle" | transloco}}</h1>
+    </header>
+    
+    <p-card>
+        <section class="sport">
+            <h1>{{ "sport" | transloco}}</h1>
+            <p-dropdown [options]="( sports$ | async ) || []" [(ngModel)]="selectedSport" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true"
+                placeholder="--{{ 'sportPlaceholder' | transloco }}--"  styleClass="w-20rem">
+                <ng-template pTemplate="filter" let-options="options">
+                    <div class="flex gap-1">
+                        <div class="p-inputgroup" (click)="$event.stopPropagation()">
+                            <span class="p-inputgroup-addon"><i class="pi pi-search"></i></span>
+                            <input 
+                                type="text"
+                                pInputText
+                                placeholder="Filter" 
+                                [(ngModel)]="filterValue"
+                                (keyup)="customFilterFunction($event, options)" />
+                        </div>
+                        <button pButton icon="pi pi-times" (click)="resetFunction(options)" severity="secondary"></button>
+                    </div>
+                </ng-template>
+            </p-dropdown>
+        </section>
+        <section>
+            <h1>{{ "where" | transloco }}</h1>
+            <p-dropdown [options]="( where$ | async ) || []" [(ngModel)]="selectedWhere" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true"
+                placeholder="--{{ 'wherePlaceholder' | transloco }}--" styleClass="w-20rem">
+                <ng-template pTemplate="filter" let-options="options">
+                    <div class="flex gap-1">
+                        <div class="p-inputgroup" (click)="$event.stopPropagation()">
+                            <span class="p-inputgroup-addon"><i class="pi pi-search"></i></span>
+                            <input 
+                                type="text"
+                                pInputText
+                                placeholder="Filter" 
+                                [(ngModel)]="filterValue"
+                                (keyup)="customFilterFunction($event, options)" />
+                        </div>
+                        <button pButton icon="pi pi-times" (click)="resetFunction(options)" severity="secondary"></button>
+                    </div>
+                </ng-template>
+            </p-dropdown>
+        </section>
+        <section>
+            <h1>{{ "when" | transloco }}</h1>
+            <p-dropdown [options]="( when$ | async ) || []" [(ngModel)]="selectedWhen" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true"
+                placeholder="--{{ 'whenPlaceholder' | transloco }}--" styleClass="w-20rem">
+            <!-- <p-dropdown [options]="( sports$ | async ) || []" [(ngModel)]="selectedSport" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true"
+            placeholder="--{{ 'sportPlaceholder' | transloco }}--"  styleClass="w-20rem"> -->
+                <ng-template pTemplate="filter" let-options="options">
+                    <div class="flex gap-1">
+                        <div class="p-inputgroup" (click)="$event.stopPropagation()">
+                            <span class="p-inputgroup-addon"><i class="pi pi-search"></i></span>
+                            <input 
+                                type="text"
+                                pInputText
+                                placeholder="Filter" 
+                                [(ngModel)]="filterValue"
+                                (keyup)="customFilterFunction($event, options)" />
+                        </div>
+                        <button pButton icon="pi pi-times" (click)="resetFunction(options)" severity="secondary"></button>
+                    </div>
+                </ng-template>
+            </p-dropdown>
+        </section>
+    </p-card>
+</div>

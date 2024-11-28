@@ -1,0 +1,37 @@
+{
+    "bookingSearchTitle": "Buat tempahan",
+    "sport": "Sukan",
+    "sportPlaceholder": "Pilih Sukan",
+    "where": "Lokasi",
+    "wherePlaceholder": "Cari negeri",
+    "when": "Bila",
+    "whenPlaceholder": "Pilih Masa",
+    "sports$": {
+        "badminton": "Badminton",
+        "basketball": "Bola Keranjang",
+        "volleyball": "Bola Tampar",
+        "tennis": "Tenis",
+        "pingpong": "Ping Pong",
+        "pickleball": "Pickleball"
+    },
+    "where$": {
+        "selangor": "Selangor",
+        "kualaLumpur": "Kuala Lumpur",
+        "kelantan": "Kelantan",
+        "kedah": "Kedah",
+        "melaka": "Melaka",
+        "johor": "Johor",
+        "penang": "Penang",
+        "perak": "Perak",
+        "perlis": "Perlis",
+        "pahang": "Pahang",
+        "sabah": "Sabah",
+        "sarawak": "Sarawak",
+        "negerisembilan": "Negeri Sembilan",
+        "terengganu": "Terengganu"
+    },
+    "when$": {
+        "am": "AM",
+        "pm": "PM"
+    }
+}

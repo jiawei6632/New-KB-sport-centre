@@ -1,6 +1,7 @@
 {
     "terms": {
       "title": "条款和条件",
+      "titles": "隐私政策",
       "lastUpdated": "最后更新",
       "introduction": {
         "title": "1. 介绍",
@@ -121,6 +122,7 @@
           "content": "如果这些条款和条件的任何部分被认为无效或不可执行，其余部分将继续有效。"
         }
       }
-    }
+    },
+    "titles": "Privacy Policy"
   }
   

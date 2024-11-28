@@ -1,0 +1,37 @@
+{
+    "bookingSearchTitle": "预订",
+    "sport": "运动",
+    "sportPlaceholder": "选择一种运动",
+    "where": "地点",
+    "wherePlaceholder": "搜索州",
+    "when": "时间",
+    "whenPlaceholder": "选择一个时间",
+    "sports$": {
+        "badminton": "羽毛球",
+        "basketball": "篮球",
+        "volleyball": "排球",
+        "tennis": "网球",
+        "pingpong": "乒乓球",
+        "pickleball": "匹克球"
+    },
+    "where$": {
+        "selangor": "雪兰莪",
+        "kualaLumpur": "吉隆坡",
+        "kelantan": "吉兰丹",
+        "kedah": "吉打",
+        "melaka": "马六甲",
+        "johor": "柔佛",
+        "penang": "槟城",
+        "perak": "霹雳",
+        "perlis": "玻璃市",
+        "pahang": "彭亨",
+        "sabah": "沙巴",
+        "sarawak": "砂拉越",
+        "negerisembilan": " Negeri Sembilan",
+        "terengganu": "登嘉楼"
+    },
+    "when$": {
+        "am": "AM",
+        "pm": "PM"
+    }
+}

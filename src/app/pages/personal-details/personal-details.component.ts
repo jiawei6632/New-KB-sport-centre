@@ -10,10 +10,11 @@ import { DropdownModule } from 'primeng/dropdown'
 import { ToolbarModule } from 'primeng/toolbar';
 import { PhoneNumberFormat, PhoneNumberUtil } from 'google-libphonenumber';
 import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { TranslocoModule } from '@ngneat/transloco';
 @Component({
   selector: 'app-personal-details',
   standalone: true,
-  imports: [CardModule, CalendarModule, DropdownModule, ButtonModule, ReactiveFormsModule, ToolbarModule, AvatarGroupModule, AvatarModule, CommonModule],
+  imports: [CardModule, CalendarModule, DropdownModule, ButtonModule, ReactiveFormsModule, ToolbarModule, AvatarGroupModule, AvatarModule, CommonModule, TranslocoModule],
   templateUrl: './personal-details.component.html',
   styleUrl: './personal-details.component.less'
 })

@@ -1,6 +1,7 @@
 {
     "terms": {
       "title": "Terma dan Syarat",
+      "titles": "Dasar Privasi",
       "lastUpdated": "Dikemas kini Terakhir",
       "introduction": {
         "title": "1. Pengenalan",
@@ -121,6 +122,7 @@
           "content": "Jika mana-mana bahagian Terma dan Syarat ini didapati tidak sah atau tidak boleh dikuatkuasakan, baki terma akan tetap berkuatkuasa sepenuhnya."
         }
       }
-    }
+    },
+    "titles": "Privacy Policy"
   }
   

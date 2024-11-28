@@ -1,0 +1,37 @@
+{
+    "bookingSearchTitle": "Book to Play",
+    "sport": "Sport",
+    "sportPlaceholder": "Select a Sport",
+    "where": "Where",
+    "wherePlaceholder": "Search state",
+    "when": "When",
+    "whenPlaceholder": "Pick a Time",
+    "sports$": {
+        "badmintion": "Badminton",
+        "basketball": "Basketball",
+        "volleyball": "Volleyball",
+        "tennis": "Tennis",
+        "pingpong": "PingPong",
+        "pickleball": "Pickleball"
+    },
+    "where$": {
+        "selangor": "Selangor",
+        "kualaLumpur": "Kuala Lumpur",
+        "kelantan": "Kelantan",
+        "kedah": "Kedah",
+        "melaka": "Melaka",
+        "johor": "Johor",
+        "penang": "Penang",
+        "perak": "Perak",
+        "perlis": "Perlis",
+        "pahang": "Pahang",
+        "sabah": "Sabah",
+        "sarawak": "Sarawak",
+        "negerisembilan": "Negeri Sembilan",
+        "terengganu": "Terengganu"
+    },
+    "when$": {
+        "am": "AM",
+        "pm": "PM"
+    }
+}
