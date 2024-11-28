@@ -11,15 +11,14 @@ export class TranslocoHttpLoader implements TranslocoLoader {
 
     getTranslation(lang: string): Observable<Translation> {
         const termsRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/terms/${lang}.json`);
-        const privacyPolicyRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/privacyPolicy/${lang}.json`);
         const headerRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/header/${lang}.json`);
         const LogInRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/login/${lang}.json`);
         const SignUpRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/signup/${lang}.json`);
         const BookingSearchRequest = this.http.get<Translation>( `${environment.baseUrl}/assets/i18n/bookingSearch/${lang}.json`);
     
-        return forkJoin([termsRequest, privacyPolicyRequest, headerRequest, LogInRequest, SignUpRequest, BookingSearchRequest]).pipe(
-          map(([terms, privacyPolicy, header, login, signup, bookingSearch]) => {
-             return { ...terms, ...privacyPolicy, ...header, ...login, ...signup, ...bookingSearch };
+        return forkJoin([termsRequest, headerRequest, LogInRequest, SignUpRequest, BookingSearchRequest]).pipe(
+          map(([terms, header, login, signup, bookingSearch]) => {
+             return { ...terms, ...header, ...login, ...signup, ...bookingSearch };
           })
         );
     }
