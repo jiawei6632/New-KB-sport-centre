@@ -6,32 +6,35 @@
     "wherePlaceholder": "Cari negeri",
     "when": "Bila",
     "whenPlaceholder": "Pilih Masa",
+    "filterSports": "Masukkan sukan",
+    "filterWhere": "Masukkan lokasi",
+    "filterWhen": "Masukkan masa untuk bermain",
     "sports$": {
-        "badminton": "Badminton",
-        "basketball": "Bola Keranjang",
-        "volleyball": "Bola Tampar",
-        "tennis": "Tenis",
-        "pingpong": "Ping Pong",
-        "pickleball": "Pickleball"
+    "BD": "Badminton",
+    "BB": "Bola Keranjang",
+    "VB": "Bola Tampar",
+    "TN": "Tenis",
+    "PT": "Ping Pong",
+    "PB": "Pickleball"
     },
     "where$": {
-        "selangor": "Selangor",
-        "kualaLumpur": "Kuala Lumpur",
-        "kelantan": "Kelantan",
-        "kedah": "Kedah",
-        "melaka": "Melaka",
-        "johor": "Johor",
-        "penang": "Penang",
-        "perak": "Perak",
-        "perlis": "Perlis",
-        "pahang": "Pahang",
-        "sabah": "Sabah",
-        "sarawak": "Sarawak",
-        "negerisembilan": "Negeri Sembilan",
-        "terengganu": "Terengganu"
+    "SG": "Selangor",
+    "KL": "Kuala Lumpur",
+    "KT": "Kelantan",
+    "KD": "Kedah",
+    "MK": "Melaka",
+    "JH": "Johor",
+    "PN": "Pulau Pinang",
+    "PR": "Perak",
+    "PL": "Perlis",
+    "PH": "Pahang",
+    "SB": "Sabah",
+    "SW": "Sarawak",
+    "NS": "Negeri Sembilan",
+    "TG": "Terengganu"
     },
     "when$": {
-        "am": "AM",
-        "pm": "PM"
+        "AM": "AM",
+        "PM": "PM"
     }
 }

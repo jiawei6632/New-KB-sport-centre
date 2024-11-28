@@ -3,35 +3,38 @@
     "sport": "运动",
     "sportPlaceholder": "选择一种运动",
     "where": "地点",
-    "wherePlaceholder": "搜索州",
+    "wherePlaceholder": "搜索州属",
     "when": "时间",
     "whenPlaceholder": "选择一个时间",
+    "filterSports": "输入体育项目",
+    "filterWhere": "输入位置",
+    "filterWhen": "输入玩耍时间",
     "sports$": {
-        "badminton": "羽毛球",
-        "basketball": "篮球",
-        "volleyball": "排球",
-        "tennis": "网球",
-        "pingpong": "乒乓球",
-        "pickleball": "匹克球"
-    },
-    "where$": {
-        "selangor": "雪兰莪",
-        "kualaLumpur": "吉隆坡",
-        "kelantan": "吉兰丹",
-        "kedah": "吉打",
-        "melaka": "马六甲",
-        "johor": "柔佛",
-        "penang": "槟城",
-        "perak": "霹雳",
-        "perlis": "玻璃市",
-        "pahang": "彭亨",
-        "sabah": "沙巴",
-        "sarawak": "砂拉越",
-        "negerisembilan": " Negeri Sembilan",
-        "terengganu": "登嘉楼"
-    },
+    "BD": "羽毛球",
+    "BB": "篮球",
+    "VB": "排球",
+    "TN": "网球",
+    "PT": "乒乓球",
+    "PB": "匹克球"
+  },
+  "where$": {
+    "SG": "雪兰莪",
+    "KL": "吉隆坡",
+    "KT": "吉兰丹",
+    "KD": "吉打",
+    "MK": "马六甲",
+    "JH": "柔佛",
+    "PN": "槟城",
+    "PR": "霹雳",
+    "PL": "吉打",
+    "PH": "彭亨",
+    "SB": "沙巴",
+    "SW": "砂拉越",
+    "NS": "森美兰",
+    "TG": "登嘉楼"
+  },
     "when$": {
-        "am": "AM",
-        "pm": "PM"
+        "AM": "AM",
+        "PM": "PM"
     }
 }

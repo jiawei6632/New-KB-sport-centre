@@ -6,32 +6,35 @@
     "wherePlaceholder": "Search state",
     "when": "When",
     "whenPlaceholder": "Pick a Time",
+    "filterSports": "Enter a sports",
+    "filterWhere": "Enter Location",
+    "filterWhen": "Enter When to Play",
     "sports$": {
-        "badmintion": "Badminton",
-        "basketball": "Basketball",
-        "volleyball": "Volleyball",
-        "tennis": "Tennis",
-        "pingpong": "PingPong",
-        "pickleball": "Pickleball"
+        "BD": "Badminton",
+        "BB": "Basketball",
+        "VB": "Volleyball",
+        "TN": "Tennis",
+        "PT": "PingPong",
+        "PB": "Pickleball"
     },
     "where$": {
-        "selangor": "Selangor",
-        "kualaLumpur": "Kuala Lumpur",
-        "kelantan": "Kelantan",
-        "kedah": "Kedah",
-        "melaka": "Melaka",
-        "johor": "Johor",
-        "penang": "Penang",
-        "perak": "Perak",
-        "perlis": "Perlis",
-        "pahang": "Pahang",
-        "sabah": "Sabah",
-        "sarawak": "Sarawak",
-        "negerisembilan": "Negeri Sembilan",
-        "terengganu": "Terengganu"
+        "SG": "Selangor",
+        "KL": "Kuala Lumpur",
+        "KT": "Kelantan",
+        "KD": "Kedah",
+        "MK": "Melaka",
+        "JH": "Johor",
+        "PN": "Penang",
+        "PR": "Perak",
+        "PL": "Perlis",
+        "PH": "Pahang",
+        "SB": "Sabah",
+        "SW": "Sarawak",
+        "NS": "Negeri Sembilan",
+        "TG": "Terengganu"
     },
     "when$": {
-        "am": "AM",
-        "pm": "PM"
+        "AM": "AM",
+        "PM": "PM"
     }
 }

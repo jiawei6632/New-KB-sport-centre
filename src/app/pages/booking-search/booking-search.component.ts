@@ -5,30 +5,47 @@ import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
 import { CalendarModule } from 'primeng/calendar';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
-import { filter, switchMap, of} from 'rxjs';
+import { filter, map, Observable, of, startWith } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { PrimeIcons } from 'primeng/api';
 
 @Component({
   selector: 'app-booking',
   standalone: true,
-  imports: [FormsModule, CardModule, DropdownModule, ButtonModule, CalendarModule, TranslocoModule, CommonModule],
+  imports: [
+    FormsModule,
+    CardModule,
+    DropdownModule,
+    ButtonModule,
+    CalendarModule,
+    TranslocoModule,
+    CommonModule,
+    FormsModule
+  ],
   templateUrl: './booking-search.component.html',
   styleUrls: ['./booking-search.component.less']
 })
 export class BookingSearchComponent {
+  date: Date | null = null;
+  minDate: Date = new Date();
+  maxDate: Date = new Date();
+  sportFilterValue = '';
+  locationFilterValue = '';
+  timeFilterValue = '';
+  selectedSport: any;
+  selectedWhere: any;
+  selectedWhen: any;
 
-  constructor(private translocoService: TranslocoService) {}
-
-  sports$ = of([
+  sports = [
     { name: 'Badminton', code: 'BD' },
     { name: 'Basketball', code: 'BB' },
     { name: 'Volleyball', code: 'VB' },
     { name: 'Tennis', code: 'TN' },
     { name: 'Ping Pong', code: 'PT' },
     { name: 'Pickleball', code: 'PB' }
-  ]);
+  ];
 
-  where$ = of([
+  locations = [
     { name: 'Selangor', code: 'SG' },
     { name: 'Kuala Lumpur', code: 'KL' },
     { name: 'Kelantan', code: 'KT' },
@@ -43,49 +60,44 @@ export class BookingSearchComponent {
     { name: 'Sarawak', code: 'SW' },
     { name: 'Pahang', code: 'PH' },
     { name: 'Terengganu', code: 'TG' }
-  ]);
+  ];
 
-  when$ = of([
-    { name: 'Morning', code: 'AM' },
-    { name: 'Afternoon', code: 'PM' },
-    { name: 'Evening', code: 'EV' }
-  ]);
+  times = [
+    { name: 'AM', code: 'AM' },
+    { name: 'PM', code: 'PM' }
+  ];
 
-  selectedSport: any;
-  selectedWhere: any;
-  selectedWhen: any;
+  filteredSports$!: Observable<any[]>;
+  filteredLocations$!: Observable<any[]>;
+  filteredTimes$!: Observable<any[]>;
 
-  filterValue: string = '';
+  [key: string]: any;
 
-  customFilterFunction(event: any, options: any) {
-    const query = event.target.value?.toLowerCase();
-    options.filter(query);
+  constructor(private translocoService: TranslocoService) {
+    this.maxDate = new Date(this.minDate);
+    this.maxDate.setDate(this.minDate.getDate() + 2);
   }
 
-  resetFunction(options: any) {
-    this.filterValue = '';
-    options.filter('');
+  ngOnInit() {
+    this.filteredSports$ = this.createFilterStream(this.sports, 'sportFilterValue');
+    this.filteredLocations$ = this.createFilterStream(this.locations, 'locationFilterValue');
+    this.filteredTimes$ = this.createFilterStream(this.times, 'timeFilterValue');
   }
 
-   // Translate sports, locations, and times using TranslocoService
-  // getTranslatedSports(sports: any[]) {
-  //   return sports.map(sport => ({
-  //     ...sport,
-  //     name: this.translocoService.translate(`sports.${sport.code}`)
-  //   }));
-  // }
+  createFilterStream(data: any[], filterKey: string): Observable<any[]> {
+    return of(data).pipe(
+      startWith(''),
+      map(() => this[filterKey]?.toLowerCase() || ''),
+      map((filterValue) =>
+        filterValue
+          ? data.filter(item => item.name.toLowerCase().includes(filterValue))
+          : data 
+      )
+    );
+  }
 
-  // getTranslatedLocations(locations: any[]) {
-  //   return locations.map(location => ({
-  //     ...location,
-  //     name: this.translocoService.translate(`locations.${location.code}`)
-  //   }));
-  // }
-
-  // getTranslatedTimes(times: any[]) {
-  //   return times.map(time => ({
-  //     ...time,
-  //     name: this.translocoService.translate(`times.${time.code}`)
-  //   }));
-  // }
+  resetFilter(filterKey: 'sportFilterValue' | 'locationFilterValue' | 'timeFilterValue') {
+    this[filterKey] = '';
+  }
 }
+

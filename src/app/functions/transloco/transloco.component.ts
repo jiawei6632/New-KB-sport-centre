@@ -18,7 +18,7 @@ export class TranslocoComponent {
   ];
 
   // Default selected language
-  selectedLanguage: string = 'en';
+  selectedLanguage: string = 'zh';
 
   // Dropdown visibility flag
   isDropdownVisible = false;

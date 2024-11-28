@@ -1,3 +1,28 @@
-.flag-img {
-    width: 18px;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  // Ensure it wraps on smaller screens
+}
+
+.filter-item {
+  flex: 1 1 30%;  // Each filter takes up 30% of the space, and will shrink/grow if needed
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-item h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .filter-item {
+    flex: 1 1 100%;  // Stack them vertically on smaller screens
+  }
 }
