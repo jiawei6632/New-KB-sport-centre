@@ -1,0 +1,22 @@
+{
+    "contact": {
+        "title": "给我们留言",
+        "text1": "您可以联系我们，任何与我们服务相关的事项。",
+        "text2": "我们会尽快与您联系。",
+        "name": {
+            "name": "您的姓名"
+        },
+        "email": {
+            "email": "电子邮件地址"
+        },
+        "phoneNum": {
+            "phoneNum": "电话号码"
+        },
+        "message": {
+            "message": "您的留言"
+        },
+        "submit": {
+            "submit": "提交"
+        }
+    }
+}

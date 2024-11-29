@@ -8,6 +8,7 @@ import { PersonalDetailsComponent } from './pages/personal-details/personal-deta
 import { PrivacyPolicyComponent } from './pages/legal/privacy-policy/privacy-policy.component';
 import { TermsComponent } from './pages/legal/terms/terms.component';
 import { BookingSearchComponent } from './pages/booking/booking-search/booking-search.component';
+import { ContactComponent } from './pages/support/contact/contact.component';
 
 export const routes: Routes = [
     {
@@ -41,6 +42,10 @@ export const routes: Routes = [
             {
                 path: 'booking-search',
                 component: BookingSearchComponent,
+            },
+            {
+                path: 'contact',
+                component: ContactComponent,
             }
         ],
     },

@@ -1,1 +1,90 @@
-<p>contact works!</p>
+
+    <form [formGroup]="Contactform" class="form-container">
+        <!-- Close Button -->
+        <div class="CancelClick">
+            <p-button icon="pi pi-times" styleClass="p-button-text" (click)="CancelClick()"></p-button>
+        </div>
+    
+        <!-- contact header -->
+        <h1>{{ 'contact.title' | transloco }}</h1>
+        <h5>{{ 'contact.text1' | transloco }}</h5>
+        <h5>{{ 'contact.text2' | transloco }}</h5>
+    
+        <!-- Name Field -->
+        <div class="inputField">
+            <label class="col-12">
+                {{ 'contact.name.name' | transloco }}<span class="text-red-400">*&nbsp;</span>
+            </label>
+            <div class="input-field col-12">
+                <input 
+                    type="name" 
+                    id="name" 
+                    name="name" 
+                    formControlName="Name"
+                />
+                <div *ngIf="Contactform.controls['Name'].invalid && Contactform.controls['Name'].touched" class="error-message">
+                    <small *ngIf="Contactform.controls['Name'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Email Field -->
+        <div class="inputField">
+            <label class="col-12">
+                {{ 'contact.email.email' | transloco }}<span class="text-red-400">*&nbsp;</span>
+            </label>
+            <div class="input-field col-12">
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    formControlName="Email"
+                    [ngClass]="{'invalid-input': Contactform.controls['Email'].invalid && Contactform.controls['Email'].touched}"
+                />
+                <div *ngIf="Contactform.controls['Email'].invalid && Contactform.controls['Email'].touched" class="error-message">
+                    <small *ngIf="Contactform.controls['Email'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+                    <small *ngIf="Contactform.controls['Email'].errors?.['email']">{{ 'invalidEmail' | transloco }}</small>
+                </div>
+            </div>
+        </div>
+    
+        <!-- PhoneNumber Field -->
+        <div class="inputField">
+            <label class="col-12">
+                {{ 'contact.phoneNum.phoneNum' | transloco }}<span class="text-red-400">*&nbsp;</span>
+            </label>
+            <div class="input-field col-12">
+                <FxtPhoneNumberInput #Phone formControlName="PhoneNumber" [required]="true"></FxtPhoneNumberInput>
+                <div *ngIf="Contactform.controls['PhoneNum'].invalid && Contactform.controls['PhoneNum'].touched" class="error-message">
+                    <small *ngIf="Contactform.controls['PhoneNum'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+                    <small *ngIf="Contactform.controls['PhoneNum'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Message Field -->
+        <div class="inputField">
+            <label class="col-12">
+                {{ 'contact.message.message' | transloco }}<span class="text-red-400">*&nbsp;</span>
+            </label>
+            <div class="input-field col-12">
+                <input 
+                    type="message" 
+                    id="message" 
+                    name="message" 
+                    formControlName="Message"
+                />
+                <div *ngIf="Contactform.controls['Message'].invalid && Contactform.controls['Message'].touched" class="error-message">
+                    <small *ngIf="Contactform.controls['Message'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Login Button -->
+        <div class="Submit">
+            <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="{{ 'contact.submit.submit' | transloco }}" 
+            styleClass="login-btn" [outlined]="true" [disabled]="Contactform.invalid"></p-button>
+        </div>
+    </form>
+  
+    

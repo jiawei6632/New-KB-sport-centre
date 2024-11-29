@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ThemeComponent } from '../../functions/theme/theme.component';
 
 @Component({
   selector: 'app-man',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, ThemeComponent],
   templateUrl: './man.component.html',
   styleUrl: './man.component.less'
 })

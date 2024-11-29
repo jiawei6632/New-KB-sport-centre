@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^18.2.11",
     "@angular/router": "^18.2.11",
     "@ngneat/transloco": "^6.0.4",
+    "fxt-input-phone-num": "file:src/app/lib/fxt-input-phone-num-0.0.9.tgz",
     "google-libphonenumber": "^3.2.38",
     "primeflex": "^3.3.1",
     "primeicons": "^7.0.0",
@@ -39,6 +40,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "less": "^4.2.1",
     "typescript": "~5.4.2"
   }
 }

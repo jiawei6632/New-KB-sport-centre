@@ -38,6 +38,35 @@
         [minDate]="minDate"  [maxDate]="maxDate" [readonlyInput]="true" [showButtonBar]="true"/>
       </div>
 
+      <!-- <div class="filter-item">
+        <h3>{{ 'when' | transloco }}</h3>
+  
+        <label for="dateInput">Date</label>
+        <p-calendar
+          id="dateInput"
+          [(ngModel)]="date"
+          [minDate]="minDate"
+          [maxDate]="maxDate"
+          dateFormat="dd MM yy"
+          placeholder="{{ 'datePlaceholder' | transloco }}"
+          [showButtonBar]="true"
+          [readonlyInput]="true"
+          [showIcon]="true"
+        ></p-calendar>
+  
+        <label for="startTimeInput">Start Time</label>
+        <select id="startTimeInput" [(ngModel)]="startTime">
+          <option *ngFor="let time of availableTimes" [value]="time">{{ time }}</option>
+        </select>
+  
+        <label for="durationInput">Duration (Hours)</label>
+        <select id="durationInput" [(ngModel)]="duration">
+          <option *ngFor="let dur of availableDurations" [value]="dur">{{ dur }}</option>
+        </select>
+      </div> -->
+
+      
+
       <!-- <div class="filter-item"> -->
         <i class="pi pi-search" style="font-size: 2rem"></i>
       <!-- </div> -->

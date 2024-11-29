@@ -32,6 +32,15 @@ export class BookingSearchComponent {
   selectedLocation: any;
   selectedWhen: any;
 
+  // startTime: string = '08:00'; // Default start time
+  // duration: number = 1; // Default duration (1 hour)
+
+  // // Time constraints
+  // openTime = '08:00'; // Opening time (8:00 AM)
+  // closeTime = '02:00'; // Closing time (2:00 AM the next day)
+  // availableTimes: string[] = []; // Available time slots
+  // availableDurations = [1, 2, 3, 4, 5]; // Duration options in hours
+
   sports = [
     { name: 'Badminton', code: 'BD' },
     { name: 'Basketball', code: 'BB' },
@@ -80,6 +89,8 @@ export class BookingSearchComponent {
     this.maxDate = new Date(this.minDate);
     this.maxDate.setDate(this.minDate.getDate() + 2);
 
+    // this.generateAvailableTimes();
+
     this.filteredSports$ = this.createFilterStream(this.sports, this.sportFilterSubject);
     this.filteredLocations$ = this.createFilterStream(this.locations, this.locationFilterSubject);
   }
@@ -101,4 +112,30 @@ export class BookingSearchComponent {
   updateFilter(filterSubject: BehaviorSubject<string>, value: string) {
     filterSubject.next(value);
   }
+
+  // generateAvailableTimes(): void {
+  //   const times: string[] = [];
+  //   let currentTime = this.timeStringToMinutes(this.openTime); // Start at opening time
+  //   const closingTime = this.timeStringToMinutes(this.closeTime) + 24 * 60; // Adjust for next-day closing
+
+  //   while (currentTime < closingTime) {
+  //     times.push(this.minutesToTimeString(currentTime % (24 * 60))); // Normalize time to 24 hours
+  //     currentTime += 60; // Increment by 1 hour
+  //   }
+
+  //   this.availableTimes = times;
+  // }
+
+  // // Convert time string (e.g., "08:00") to minutes since midnight
+  // private timeStringToMinutes(time: string): number {
+  //   const [hours, minutes] = time.split(':').map(Number);
+  //   return hours * 60 + minutes;
+  // }
+
+  // // Convert minutes since midnight to time string (e.g., 480 -> "08:00")
+  // private minutesToTimeString(minutes: number): string {
+  //   const hrs = Math.floor(minutes / 60);
+  //   const mins = minutes % 60;
+  //   return `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}`;
+  // }
 }

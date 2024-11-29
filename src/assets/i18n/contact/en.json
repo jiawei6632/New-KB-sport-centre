@@ -1,0 +1,23 @@
+{
+    "contact": {
+        "title": "Send us a message",
+        "text1": "You can contact us with anything related to our service.",
+        "text2": "We'll get in touch with you as soon as possible.",
+        "name": {
+            "name": "Your name"
+        },
+        "email": {
+            "email": "Email address"
+        },
+        "phoneNum": {
+            "phoneNum": "Phone Number"
+        },
+        "message": {
+            "message": "Your message"
+        },
+        "submit": {
+            "submit": "Submit"
+        }
+        
+    }
+}

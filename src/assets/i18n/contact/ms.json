@@ -1,0 +1,22 @@
+{
+    "contact": {
+        "title": "Hantar mesej kepada kami",
+        "text1": "Anda boleh menghubungi kami mengenai apa sahaja yang berkaitan dengan perkhidmatan kami.",
+        "text2": "Kami akan menghubungi anda secepat mungkin.",
+        "name": {
+            "name": "Nama anda"
+        },
+        "email": {
+            "email": "Alamat emel"
+        },
+        "phoneNum": {
+            "phoneNum": "Nombor Telefon"
+        },
+        "message": {
+            "message": "Mesej anda"
+        },
+        "submit": {
+            "submit": "Hantar"
+        }
+    }
+}
