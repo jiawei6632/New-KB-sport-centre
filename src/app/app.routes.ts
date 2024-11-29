@@ -1,13 +1,13 @@
 import { Routes } from '@angular/router';
 import { ManComponent } from './pages/man/man.component';
-import { LogInComponent } from './pages/log-in/log-in.component';
-import { SignUpComponent } from './pages/sign-up/sign-up.component';
-import { LayoutComponent } from './layout/layout.component';
+import { LogInComponent } from './pages/logup/log-in/log-in.component';
+import { SignUpComponent } from './pages/logup/sign-up/sign-up.component';
+import { LayoutComponent } from './functions/layout/layout.component';
 import { NotfoundComponent } from './functions/notfound/notfound.component';
 import { PersonalDetailsComponent } from './pages/personal-details/personal-details.component';
-import { PrivacyPolicyComponent } from './Law/privacy-policy/privacy-policy.component';
-import { TermsComponent } from './Law/terms/terms.component';
-import { BookingSearchComponent } from './pages/booking-search/booking-search.component';
+import { PrivacyPolicyComponent } from './pages/legal/privacy-policy/privacy-policy.component';
+import { TermsComponent } from './pages/legal/terms/terms.component';
+import { BookingSearchComponent } from './pages/booking/booking-search/booking-search.component';
 
 export const routes: Routes = [
     {
@@ -49,4 +49,3 @@ export const routes: Routes = [
         component: NotfoundComponent,
     },
 ];
-

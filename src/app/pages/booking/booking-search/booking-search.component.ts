@@ -5,9 +5,8 @@ import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
 import { CalendarModule } from 'primeng/calendar';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
-import { filter, map, Observable, of, startWith } from 'rxjs';
+import { BehaviorSubject, combineLatest, map, Observable, of } from 'rxjs';
 import { CommonModule } from '@angular/common';
-import { PrimeIcons } from 'primeng/api';
 
 @Component({
   selector: 'app-booking',
@@ -29,11 +28,8 @@ export class BookingSearchComponent {
   date: Date | null = null;
   minDate: Date = new Date();
   maxDate: Date = new Date();
-  sportFilterValue = '';
-  locationFilterValue = '';
-  timeFilterValue = '';
   selectedSport: any;
-  selectedWhere: any;
+  selectedLocation: any;
   selectedWhen: any;
 
   sports = [
@@ -62,42 +58,47 @@ export class BookingSearchComponent {
     { name: 'Terengganu', code: 'TG' }
   ];
 
-  times = [
-    { name: 'AM', code: 'AM' },
-    { name: 'PM', code: 'PM' }
-  ];
+  public sportFilterSubject = new BehaviorSubject<string>('');
+  public locationFilterSubject = new BehaviorSubject<string>('');
 
-  filteredSports$!: Observable<any[]>;
-  filteredLocations$!: Observable<any[]>;
-  filteredTimes$!: Observable<any[]>;
+  updateSportFilter(event: Event): void {
+    const target = event.target as HTMLInputElement; 
+    const value = target?.value || ''; 
+    this.sportFilterSubject.next(value);
+  }
 
-  [key: string]: any;
+  updateLocationFilter(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    const value = target?.value || '';
+    this.locationFilterSubject.next(value);
+  }
+  
+  filteredSports$: Observable<any[]>;
+  filteredLocations$: Observable<any[]>;
 
   constructor(private translocoService: TranslocoService) {
     this.maxDate = new Date(this.minDate);
     this.maxDate.setDate(this.minDate.getDate() + 2);
+
+    this.filteredSports$ = this.createFilterStream(this.sports, this.sportFilterSubject);
+    this.filteredLocations$ = this.createFilterStream(this.locations, this.locationFilterSubject);
   }
 
-  ngOnInit() {
-    this.filteredSports$ = this.createFilterStream(this.sports, 'sportFilterValue');
-    this.filteredLocations$ = this.createFilterStream(this.locations, 'locationFilterValue');
-    this.filteredTimes$ = this.createFilterStream(this.times, 'timeFilterValue');
-  }
-
-  createFilterStream(data: any[], filterKey: string): Observable<any[]> {
-    return of(data).pipe(
-      startWith(''),
-      map(() => this[filterKey]?.toLowerCase() || ''),
-      map((filterValue) =>
-        filterValue
-          ? data.filter(item => item.name.toLowerCase().includes(filterValue))
-          : data 
+  createFilterStream(data: any[], filterSubject: BehaviorSubject<string>): Observable<any[]> {
+    return combineLatest([of(data), filterSubject.asObservable()]).pipe(
+      map(([data, filterValue]) => 
+        filterValue 
+          ? data.filter(item => item.name.toLowerCase().includes(filterValue.toLowerCase()))
+          : data
       )
     );
   }
 
-  resetFilter(filterKey: 'sportFilterValue' | 'locationFilterValue' | 'timeFilterValue') {
-    this[filterKey] = '';
+  resetFilter(filterSubject: BehaviorSubject<string>) {
+    filterSubject.next('');
+  }
+
+  updateFilter(filterSubject: BehaviorSubject<string>, value: string) {
+    filterSubject.next(value);
   }
 }
-

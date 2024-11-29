@@ -1,0 +1,47 @@
+<header>
+    <h1>{{ 'bookingSearchTitle' | transloco }}</h1>
+</header>
+
+<p-card>
+    <div class="filter-container">
+      <div class="filter-item">
+        <h3>{{ 'sport' | transloco }}</h3>
+        <p-dropdown [options]="(filteredSports$ | async) || []" [(ngModel)]="selectedSport" optionLabel="name" [filter]="true" 
+        [showClear]="true" placeholder="--{{ 'sportPlaceholder' | transloco }}--">
+          <ng-template pTemplate="filter">
+            <div class="p-inputgroup">
+              <span class="p-inputgroup-addon"><i class="pi pi-search"></i></span>
+              <input type="text" pInputText (input)="updateSportFilter($event)" placeholder="{{ 'filterSports' | transloco }}">
+            </div>
+          </ng-template>
+        </p-dropdown>
+      </div>
+
+     
+      <!-- Location Dropdown -->
+      <div class="filter-item">
+        <h3>{{ 'location' | transloco }}</h3>
+        <p-dropdown [options]="(filteredLocations$ | async) || []" [(ngModel)]="selectedLocation" optionLabel="name" [filter]="true" 
+        [showClear]="true" placeholder="--{{ 'locationPlaceholder' | transloco }}--">
+          <ng-template pTemplate="filter">
+            <div class="p-inputgroup">
+              <span class="p-inputgroup-addon"><i class="pi pi-search"></i></span>
+              <input type="text" pInputText (input)="updateSportFilter($event)" placeholder="{{ 'filterLocation' | transloco }}">
+            </div>
+          </ng-template>
+        </p-dropdown>
+      </div>
+
+      <div class="filter-item">
+        <h3>{{ 'when' | transloco }}</h3>
+        <p-calendar placeholder="--{{ 'whenPlaceholder' | transloco }}--" dateFormat="dd MM yy" [showIcon]="true" [iconDisplay]="'input'" [(ngModel)]="date" 
+        [minDate]="minDate"  [maxDate]="maxDate" [readonlyInput]="true" [showButtonBar]="true"/>
+      </div>
+
+      <!-- <div class="filter-item"> -->
+        <i class="pi pi-search" style="font-size: 2rem"></i>
+      <!-- </div> -->
+    </div>
+
+  </p-card>
+  
