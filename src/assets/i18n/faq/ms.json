@@ -1,0 +1,46 @@
+{
+    "faq": {
+        "title": "Soalan Lazim",
+        "content": "Mengenai KB Sport Center",
+        "section1": {
+            "title": "Keahlian & Pendaftaran",
+            "q1": "Bagaimana saya boleh mendaftar untuk menjadi ahli di New KB Sport Center?",
+            "a1": "Anda boleh mendaftar untuk menjadi ahli melalui laman web kami atau aplikasi mudah alih. Isikan borang pendaftaran, berikan butiran yang diperlukan, dan pilih pelan keahlian yang sesuai dengan keperluan anda. Selepas mendaftar, anda boleh mula menempah kemudahan sukan dan mendaftar untuk kelas.",
+            
+            "q2": "Adakah terdapat sekatan umur untuk menggunakan kemudahan?",
+            "a2": "Ya, beberapa kemudahan mungkin mempunyai sekatan umur. Sebagai contoh, kanak-kanak perlu ditemani oleh orang dewasa apabila menggunakan kemudahan sukan tertentu. Anda boleh menyemak keperluan umur untuk setiap aktiviti di laman web atau aplikasi kami."
+        },
+        "section2": {
+            "title": "Tempahan & Penjadualan",
+            "q3": "Bolehkah saya menempah kemudahan untuk masa tertentu?",
+            "a3": "Ya, anda boleh menempah kemudahan sukan pada masa tertentu melalui sistem tempahan dalam talian kami. Log masuk ke akaun anda, pilih kemudahan sukan yang anda mahu, dan pilih slot masa yang anda inginkan. Pastikan untuk menempah lebih awal untuk memastikan masa pilihan anda.",
+            
+            "q4": "Bagaimana saya boleh mendaftar untuk kelas atau sesi latihan?",
+            "a4": "Untuk mendaftar untuk kelas, lawati bahagian “Kelas & Latihan” di laman web atau aplikasi kami. Telusuri kelas yang tersedia, pilih yang ingin disertai, dan daftar. Anda akan menerima emel pengesahan apabila pendaftaran anda selesai.",
+            
+            "q5": "Bagaimana saya boleh membatalkan atau mengubah tempahan saya?",
+            "a5": "Untuk membatalkan atau mengubah tempahan, log masuk ke akaun anda, pergi ke bahagian “Tempahan Saya”, dan pilih tempahan yang ingin diubah atau dibatalkan. Pastikan anda membatalkan sekurang-kurangnya 24 jam lebih awal untuk mengelakkan caj pembatalan."
+        },
+        "section3": { 
+            "title": "Pembayaran & Pembayaran Balik",
+            "q6": "Apakah kaedah pembayaran yang diterima di New KB Sport Center?",
+            "a6": "Kami menerima pembayaran melalui PayPal, Kad Kredit/Kad Debit, Pemindahan Bank, dan Tunai. Anda boleh memilih kaedah pembayaran pilihan anda semasa membuat tempahan atau membayar yuran keahlian.",
+            
+            "q7": "Bolehkah saya mendapatkan bayaran balik jika saya tidak dapat menghadiri kelas atau menggunakan kemudahan?",
+            "a7": "Dasar bayaran balik berbeza mengikut jenis tempahan atau kelas. Secara amnya, bayaran balik tersedia jika pembatalan dibuat 24 jam lebih awal. Sila rujuk dasar bayaran balik kami untuk maklumat lanjut, atau hubungi pasukan sokongan kami jika anda memerlukan bantuan."
+        },
+        "section4": {
+            "title": "Kemudahan & Perkhidmatan",
+            "q8": "Apakah kemudahan yang tersedia di New KB Sport Center?",
+            "a8": "Kami menawarkan pelbagai kemudahan untuk aktiviti sukan termasuk badminton, bola keranjang, bola tampar, pickleball, ping pong, dan tenis. Pusat kami juga menyediakan bilik latihan, bilik persalinan, dan kawasan kecergasan.",
+            
+            "q9": "Adakah terdapat tempat letak kereta di New KB Sport Center?",
+            "a9": "Ya, kami menawarkan ruang letak kereta yang luas untuk semua ahli dan pelawat. Kawasan letak kereta adalah percuma untuk semua pengguna pusat ini."
+        },
+        "section5": { 
+            "title": "Hubungi & Sokongan",
+            "q10": "Bagaimana saya boleh menghubungi New KB Sport Center?",
+            "a10": "Anda boleh menghubungi kami melalui emel di support@kbsportcenter.com atau melalui borang hubungan di laman web kami. Pasukan khidmat pelanggan kami tersedia dari jam 9 pagi hingga 6 petang, Isnin hingga Jumaat. Anda juga boleh menghubungi kami melalui telefon di (+60) 13-476 9184."
+        }
+    }
+}

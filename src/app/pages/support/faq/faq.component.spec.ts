@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QNAComponent } from './qna.component';
+import { FaqComponent } from './faq.component';
 
-describe('QNAComponent', () => {
-  let component: QNAComponent;
-  let fixture: ComponentFixture<QNAComponent>;
+describe('FaqComponent', () => {
+  let component: FaqComponent;
+  let fixture: ComponentFixture<FaqComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [QNAComponent]
+      imports: [FaqComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(QNAComponent);
+    fixture = TestBed.createComponent(FaqComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

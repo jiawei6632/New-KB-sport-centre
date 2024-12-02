@@ -1,0 +1,46 @@
+{
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "content": "About KB Sport Center",
+        "section1": {
+            "title": "Membership & Registration",
+            "q1": "How can I register for a membership at New KB Sport Center? ",
+            "a1": "You can register for a membership through our website or mobile app. Simply fill out the registration form, provide necessary details, and choose a membership plan that suits your needs. After completing the registration, you can start booking sports facilities and signing up for classes.",
+            
+            "q2": "Are there any age restrictions for using the facilities?",
+            "a2": "Yes, some facilities may have age restrictions. For example, children must be accompanied by an adult when using certain sports facilities. You can check the specific age requirements for each activity on our website or app."
+        },
+        "section2": {
+            "title": "Booking & Scheduling",
+            "q3": "Can I book a facility for a specific time?",
+            "a3": "Yes, you can book sports facilities at specific times through our online booking system. Simply log in to your account, select the sport facility you want, and choose your preferred time slot. Please make sure to book in advance to secure your preferred time.",
+            
+            "q4": "How do I enroll in a class or training session?",
+            "a4": "To enroll in a class, visit the “Classes & Training” section on our website or app. Browse through the available classes, choose the one you wish to join, and sign up. You’ll receive a confirmation email once your registration is complete.",
+            
+            "q5": "How do I cancel or modify my booking?",
+            "a5": "To cancel or modify a booking, log in to your account, go to the “My Bookings” section, and choose the booking you wish to modify or cancel. Please make sure to cancel at least 24 hours in advance to avoid any cancellation charges."    
+        },
+        "section3": { 
+            "title": "Payment & Refund",
+            "q6": "What payment methods are accepted at New KB Sport Center?",
+            "a6": "We accept payments through PayPal, Credit/Debit Cards, Bank Transfer, and Cash. You can select your preferred payment method when making a booking or paying for membership fees.",           
+           
+            "q7": "Can I get a refund if I am unable to attend a class or use the facility?",
+            "a7": "Refund policies vary depending on the type of booking or class. Generally, refunds are available if the cancellation is made 24 hours in advance. Please refer to our refund policy for more details, or contact our support team if you need assistance."
+        },
+        "section4": {
+            "title": "Facilities & Service",
+            "q8": "What facilities are available at New KB Sport Center?",
+            "a8": "We offer a wide range of facilities for different sports activities including badminton, basketball, volleyball, pickleball, ping pong, and tennis. Our center also provides training rooms, locker rooms, and a fitness area.",
+             
+            "q9": "Is there parking available at New KB Sport Center?",
+            "a9": "Yes, we offer ample parking space for all our members and visitors. The parking area is free of charge for all users of the center."
+        },
+        "section5": { 
+            "title": "Contact & Support",
+        "q10": "How can I contact the New KB Sport Center?",
+        "a10": "You can contact us via email at support@kbsportcenter.com or through our contact form on the website. Our customer service team is available from 9 AM to 6 PM, Monday to Friday. You can also reach us by phone at (+60) 13-476 9184."
+        }
+    }
+}

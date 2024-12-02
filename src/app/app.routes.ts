@@ -9,6 +9,7 @@ import { PrivacyPolicyComponent } from './pages/legal/privacy-policy/privacy-pol
 import { TermsComponent } from './pages/legal/terms/terms.component';
 import { BookingSearchComponent } from './pages/booking/booking-search/booking-search.component';
 import { ContactComponent } from './pages/support/contact/contact.component';
+import { FaqComponent } from './pages/support/faq/faq.component';
 
 export const routes: Routes = [
     {
@@ -46,7 +47,11 @@ export const routes: Routes = [
             {
                 path: 'contact',
                 component: ContactComponent,
-            }
+            },
+            {
+                path: 'faq',
+                component: FaqComponent,
+            },
         ],
     },
     {
