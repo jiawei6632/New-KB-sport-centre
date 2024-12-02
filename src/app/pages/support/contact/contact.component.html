@@ -1,10 +1,10 @@
 
-    <form [formGroup]="Contactform" class="form-container">
+<form [formGroup]="Contactform" (ngSubmit)="SaveUpdateClick()">
         <!-- Close Button -->
-        <div class="CancelClick">
+        <!-- <div class="CancelClick">
             <p-button icon="pi pi-times" styleClass="p-button-text" (click)="CancelClick()"></p-button>
         </div>
-    
+     -->
         <!-- contact header -->
         <h1>{{ 'contact.title' | transloco }}</h1>
         <h5>{{ 'contact.text1' | transloco }}</h5>
@@ -55,10 +55,10 @@
             </label>
             <div class="input-field col-12">
                 <FxtPhoneNumberInput #Phone formControlName="PhoneNumber" [required]="true"></FxtPhoneNumberInput>
-                <div *ngIf="Contactform.controls['PhoneNum'].invalid && Contactform.controls['PhoneNum'].touched" class="error-message">
-                    <small *ngIf="Contactform.controls['PhoneNum'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
-                    <small *ngIf="Contactform.controls['PhoneNum'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
-                </div>
+                <div *ngIf="Contactform.controls['PhoneNumber'].invalid && Contactform.controls['PhoneNumber'].touched" class="error-message">
+                    <small *ngIf="Contactform.controls['PhoneNumber'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+                    <small *ngIf="Contactform.controls['PhoneNumber'].errors?.['pattern']">{{ 'invalidPhoneNumber' | transloco }}</small>
+                </div>                  
             </div>
         </div>
     

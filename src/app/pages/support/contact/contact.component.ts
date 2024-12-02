@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
@@ -11,7 +11,7 @@ import { PhoneNumberFormat, PhoneNumberUtil } from 'google-libphonenumber';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule, ButtonModule, CardModule, RouterModule, CommonModule, TranslocoModule, PhonenumberinputComponent],
+  imports: [ReactiveFormsModule, ButtonModule, CardModule, RouterModule, CommonModule, TranslocoModule, PhonenumberinputComponent, FormsModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.less'],
   encapsulation: ViewEncapsulation.None,
@@ -21,10 +21,10 @@ export class ContactComponent {
 
   constructor() {
     this.Contactform = new FormGroup({
-      Name: new FormControl('', [Validators.required]),
-      Email: new FormControl('', [Validators.required, Validators.email]),
-      PhoneNum: new FormControl('', [Validators.required]),
-      Message: new FormControl('', [Validators.required]),
+      Name: new FormControl<string>('', [Validators.required]),
+      Email: new FormControl<string>('', [Validators.required, Validators.email]),
+      PhoneNumber: new FormControl<string>('', [Validators.required, Validators.pattern(/^\+?\d{10,15}$/)]),
+      Message: new FormControl<string>('', [Validators.required]),
     });
   }
 
