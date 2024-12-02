@@ -35,15 +35,15 @@
               "src/styles.less",
               "node_modules/primeflex/primeflex.css",
               {
-                "input": "src/theme-dark.css",
-                "bundleName": "theme-dark",
-                "inject": false
-              },
+								"input": "src/themes/lara/lara-light-blue.css",
+								"bundleName": "lara-blue",
+								"inject": false
+							},
               {
-                "input": "src/theme-light.css",
-                "bundleName": "theme-light",
-                "inject": false
-              }
+								"input": "src/themes/lara/lara-dark-blue.css",
+								"bundleName": "lara-blue-dark",
+								"inject": false
+							}
             ],
             "scripts": []
           },
