@@ -14,8 +14,7 @@ import { ThemeService } from '../../services/theme-service.service';
 })
 export class ThemeComponent implements OnInit {
   private themeService = inject(ThemeService);
-
-  darkModeEnabled: boolean = false;
+  
   checked: boolean = false;
   selectedTheme: string = 'lara-blue'; // Default to light theme
 

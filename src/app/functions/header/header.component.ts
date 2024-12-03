@@ -1,24 +1,20 @@
-import { ChangeDetectorRef, Component, inject } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenubarModule } from 'primeng/menubar';
-import { ManComponent } from '../../pages/man/man.component';
 import { PrimeIcons, MenuItem } from 'primeng/api';
 import { DropdownModule } from 'primeng/dropdown'; 
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { TranslocoComponent } from '../transloco/transloco.component';
-import { TranslocoModule } from '@ngneat/transloco';
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 
 @Component({
   standalone: true,
   imports: [
     MenubarModule,
     RouterModule,
-    ManComponent,
     DropdownModule,
     FormsModule,
     CommonModule,
-    TranslocoComponent,
     TranslocoModule,
   ],
   selector: 'app-header',
@@ -26,5 +22,31 @@ import { TranslocoModule } from '@ngneat/transloco';
   styleUrls: ['./header.component.less'],
 })
 export class HeaderComponent {
-  
+  // Language options for the dropdown
+  languageOptions = [
+    { label: 'EN', value: 'en' },   
+    { label: 'BM', value: 'ms' },  
+    { label: '中文', value: 'zh' },
+  ];
+
+  // Default selected language
+  selectedLanguage: string = 'EN'; 
+
+  // Dropdown visibility flag
+  isDropdownVisible = false;
+
+  constructor(private translocoService: TranslocoService) {}
+
+  // Change the active language
+  changeLanguage(language: string): void {
+    this.translocoService.setActiveLang(language);   // Set the internal language code
+    this.selectedLanguage = this.languageOptions.find(option => option.value === language)?.label || 'EN';
+    this.isDropdownVisible = true; 
+  }
+
+  // Toggle the visibility of the dropdown
+  toggleDropdown(event: Event): void {
+    event.stopPropagation();  // Prevent event from propagating
+    this.isDropdownVisible = !this.isDropdownVisible;
+  }
 }

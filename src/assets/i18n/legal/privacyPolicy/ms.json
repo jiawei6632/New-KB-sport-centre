@@ -1,0 +1,68 @@
+{
+  "privacyPolicy": {
+    "title": "Dasar Privasi",
+    "lastUpdated": "Dikemas Kini Terakhir",
+    "section1": {
+      "title": "1. Maklumat yang Kami Kumpul",
+      "intro": "Kami mengumpul jenis maklumat berikut:",
+      "content1": {
+        "title": "Maklumat Peribadi",
+        "content1": "Seperti nama, alamat e-mel, nombor telefon dan alamat anda."
+      },
+      "content2": {
+        "title": "Maklumat Keahlian",
+        "content1": "Termasuk ID keahlian anda, rekod kecergasan, sejarah tempahan, dan sebagainya."
+      },
+      "content3": {
+        "title": "Maklumat Pembayaran",
+        "content1": "Seperti butiran akaun bank, maklumat kad kredit, dan lain-lain yang digunakan untuk pemprosesan pembayaran."
+      },
+      "content4": {
+        "title": "Data Penggunaan",
+        "content1": "Maklumat tentang bagaimana anda menggunakan laman web atau aplikasi kami, termasuk maklumat peranti, alamat IP, jenis pelayar, dan sebagainya."
+      },
+      "content5": {
+        "title": "Cookies",
+        "content1": "Kami menggunakan cookies untuk meningkatkan pengalaman pengguna anda. Cookies membantu kami mengingati pilihan anda dan memperbaiki perkhidmatan kami."
+      }
+    },
+    "section2": {
+      "title": "2. Bagaimana Kami Menggunakan Maklumat Anda",
+      "intro": "Kami menggunakan maklumat yang dikumpul untuk tujuan berikut:",
+      "content1": "Untuk menyediakan dan menguruskan kemudahan sukan, kelas, tempahan dan perkhidmatan pembayaran kami.",
+      "content2": "Untuk menghantar pemberitahuan keahlian, tawaran promosi dan maklumat lain yang relevan (jika anda bersetuju).",
+      "content3": "Untuk meningkatkan perkhidmatan dan pengalaman pelanggan kami.",
+      "content4": "Untuk mencegah penipuan dan memastikan keselamatan perkhidmatan kami."
+    },
+    "section3": {
+      "title": "3. Bagaimana Kami Berkongsi Maklumat Anda",
+      "intro": "Kami komited untuk tidak menjual atau menyewakan maklumat peribadi anda kepada pihak ketiga. Walau bagaimanapun, kami mungkin berkongsi maklumat anda dengan pihak ketiga dalam kes berikut:",
+      "content1": "Dengan penyedia perkhidmatan yang membantu dalam operasi laman web atau penyediaan perkhidmatan (seperti pemprosesan pembayaran, komunikasi, dan sebagainya).",
+      "content2": "Untuk mematuhi keperluan undang-undang atau menjawab permintaan sah dari pihak berkuasa awam."
+    },
+    "section4": {
+      "title": "4. Keselamatan Data",
+      "content1": "Kami mengambil langkah teknikal dan organisasi yang sesuai untuk melindungi maklumat peribadi anda. Walau bagaimanapun, tiada kaedah penghantaran melalui internet yang dapat menjamin keselamatan 100%, jadi kami tidak dapat memastikan keselamatan mutlak data anda."
+    },
+    "section5": {
+      "title": "5. Hak-hak Anda",
+      "intro": "Bergantung pada lokasi anda, anda mungkin mempunyai hak berikut:",
+      "content1": "Untuk mengakses, mengemas kini, atau memadam data peribadi anda.",
+      "content2": "Untuk menarik balik persetujuan anda untuk pemprosesan data pada bila-bila masa.",
+      "content3": "Untuk membantah atau meminta sekatan terhadap aktiviti pemprosesan data tertentu.",
+      "content4": "Untuk menggunakan hak-hak ini, sila hubungi kami di: 012-3456789."
+    },
+    "section6": {
+      "title": "6. Pautan Pihak Ketiga",
+      "content1": "Platform kami mungkin mengandungi pautan ke laman web pihak ketiga. Kami tidak bertanggungjawab terhadap amalan privasi laman web tersebut. Kami menggalakkan anda untuk membaca dasar privasi mereka sebelum melawat laman tersebut."
+    },
+    "section7": {
+      "title": "7. Perubahan kepada Dasar Privasi Ini",
+      "content1": "Kami mungkin mengemas kini Dasar Privasi ini dari semasa ke semasa. Sebarang kemas kini akan diposkan di halaman ini, dengan tarikh kemas kini yang dinyatakan di atas. Sila semak dasar ini secara berkala untuk sebarang perubahan dalam amalan privasi kami."
+    },
+    "section8": {
+      "title": "8. Hubungi Kami",
+      "content1": "Jika anda mempunyai sebarang soalan atau memerlukan bantuan lanjut mengenai Dasar Privasi ini, sila hubungi kami"
+    }
+  }
+}

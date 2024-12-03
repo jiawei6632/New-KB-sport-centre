@@ -1,0 +1,22 @@
+{
+    "aboutUs": {
+        "title": "About Us - KB Sport Center",
+        "content": "Welcome to New KB Sport Center, where passion for sports meets community, fitness, and wellness. Our vision is to create a space where everyone, regardless of age or skill level, can come together to engage in healthy activities, enhance their athletic abilities, and connect with others in a supportive environment.",
+        "section1": {
+            "title": "Why We Create KB Sport Center",
+            "content": "The idea for New KB Sport Center was born from a desire to offer a comprehensive, accessible, and vibrant hub for people of all ages to enjoy sports and physical activities. We believe in the transformative power of sports, not only for physical health but also for building confidence, teamwork, and resilience. Our center is designed to foster a positive, fun, and inclusive environment where every individual can feel inspired to reach their full potential, whether they’re a beginner or a seasoned athlete."
+        },
+        "section2": {
+            "title": "Our Team",
+            "content": "At New KB Sport Center, we are more than just a group of staff members; we are a passionate, dedicated team of trainers, managers, and support personnel who share a common goal – to help our members achieve their fitness goals. Our experienced trainers come from diverse backgrounds and sports disciplines, offering a wealth of knowledge and expertise. From badminton to tennis, volleyball to pickleball, our team is here to guide, motivate, and support you every step of the way."
+        },
+        "section3": {
+            "title": "Our Culture",
+            "content": "Our culture is rooted in inclusivity, collaboration, and respect. We believe in creating a space where individuals feel empowered to take on challenges, push their boundaries, and grow together as a community. We celebrate diversity, and we value every person who walks through our doors. Whether you're here for fitness, fun, or competition, you'll find a welcoming environment where you can develop your skills, make new friends, and enjoy the experience."
+        },
+        "section4": {
+            "title": "Join Us",
+            "content": "Are you ready to take the first step towards a healthier, more active lifestyle? At New KB Sport Center, we offer memberships for all levels, from beginners to advanced athletes. Whether you're looking for group classes, individual coaching, or just a place to stay active and socialize, we have something for everyone. Join us today and become part of a vibrant community that’s dedicated to health, wellness, and fun. We can’t wait to welcome you!"
+        }
+    }
+}

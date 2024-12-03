@@ -6,10 +6,12 @@
         </div>
      -->
         <!-- contact header -->
-        <h1>{{ 'contact.title' | transloco }}</h1>
-        <h5>{{ 'contact.text1' | transloco }}</h5>
-        <h5>{{ 'contact.text2' | transloco }}</h5>
-    
+        <div class="head">
+            <h1>{{ 'contact.title' | transloco }}</h1>
+            <h5>{{ 'contact.text1' | transloco }}</h5>
+            <h5>{{ 'contact.text2' | transloco }}</h5>
+        </div>
+
         <!-- Name Field -->
         <div class="inputField">
             <label class="col-12">
@@ -80,10 +82,23 @@
             </div>
         </div>
     
-        <!-- Login Button -->
         <div class="Submit">
             <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="{{ 'contact.submit.submit' | transloco }}" 
-            styleClass="login-btn" [outlined]="true" [disabled]="Contactform.invalid"></p-button>
+            styleClass="submit-btn" [outlined]="true" [disabled]="Contactform.invalid"></p-button>
+        </div>
+
+        <!-- imgField -->
+        <div class="imgField">
+            <iframe
+                style="width: 550px; height: 550px;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1719.7736731558964!2d101.72492882626497!3d3.2152552000000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20of%20Management%20and%20Technology%20(TAR%20UMT)!5e1!3m2!1sen!2smy!4v1695397980297!5m2!1sen!2smy"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
         </div>
     </form>
   

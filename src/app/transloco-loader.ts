@@ -10,18 +10,20 @@ export class TranslocoHttpLoader implements TranslocoLoader {
     private http = inject(HttpClient);
 
     getTranslation(lang: string): Observable<Translation> {
-        const termsRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/terms/${lang}.json`);
+        const termsRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/legal/terms/${lang}.json`);
         const headerRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/header/${lang}.json`);
-        const LogInRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/login/${lang}.json`);
-        const SignUpRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/signup/${lang}.json`);
+        const LogInRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/logup/login/${lang}.json`);
+        const SignUpRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/logup/signup/${lang}.json`);
         const BookingSearchRequest = this.http.get<Translation>( `${environment.baseUrl}/assets/i18n/bookingSearch/${lang}.json`);
-        const PrivacyPolicyRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/privacyPolicy/${lang}.json`);
-        const ContactRequest = this.http.get<Translation>( `${environment.baseUrl}/assets/i18n/contact/${lang}.json`);
-        const FaqRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/faq/${lang}.json`);
+        const PrivacyPolicyRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/legal/privacyPolicy/${lang}.json`);
+        const ContactRequest = this.http.get<Translation>( `${environment.baseUrl}/assets/i18n/support/contact/${lang}.json`);
+        const FaqRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/support/faq/${lang}.json`);
+        const AboutUsRequest = this.http.get<Translation>(`${environment.baseUrl}/assets/i18n/aboutUs/${lang}.json`);
     
-        return forkJoin([termsRequest, headerRequest, LogInRequest, SignUpRequest, BookingSearchRequest, PrivacyPolicyRequest, ContactRequest, FaqRequest]).pipe(
-          map(([terms, header, login, signup, bookingSearch, privacyPolicy, contact, faq]) => {
-             return { ...terms, ...header, ...login, ...signup, ...bookingSearch, ...privacyPolicy, ...contact, ...faq };
+        return forkJoin([termsRequest, headerRequest, LogInRequest, SignUpRequest, BookingSearchRequest, 
+          PrivacyPolicyRequest, ContactRequest, FaqRequest, AboutUsRequest]).pipe(
+          map(([terms, header, login, signup, bookingSearch, privacyPolicy, contact, faq, aboutUs]) => {
+             return { ...terms, ...header, ...login, ...signup, ...bookingSearch, ...privacyPolicy, ...contact, ...faq, ...aboutUs };
           })
         );
     }

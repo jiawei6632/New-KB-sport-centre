@@ -1,8 +1,29 @@
+/* Keep existing content-frame styles */
 .content-frame {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px; 
-    box-sizing: border-box; 
-    width: 100%;
-  }
-  
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  width: 100%;
+}
+
+/* Form and Map Layout */
+.form-container {
+  display: flex; /* Use flexbox for alignment */
+  gap: 20px; /* Space between form and map */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space out form and map */
+}
+
+/* Form content styling */
+.form-content {
+  flex: 1; /* Allow the form to take up available space */
+}
+
+/* Map styling */
+.imgField {
+  flex-shrink: 0; /* Prevent the map from shrinking */
+  width: 550px; /* Fixed width */
+  height: auto; /* Keep height proportional */
+  max-height: 550px; /* Ensure it fits within content-frame */
+}

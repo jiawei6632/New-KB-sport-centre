@@ -10,6 +10,7 @@ import { TermsComponent } from './pages/legal/terms/terms.component';
 import { BookingSearchComponent } from './pages/booking/booking-search/booking-search.component';
 import { ContactComponent } from './pages/support/contact/contact.component';
 import { FaqComponent } from './pages/support/faq/faq.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 export const routes: Routes = [
     {
@@ -51,6 +52,10 @@ export const routes: Routes = [
             {
                 path: 'faq',
                 component: FaqComponent,
+            },
+            {
+                path: "about-us",
+                component: AboutUsComponent,
             },
         ],
     },
