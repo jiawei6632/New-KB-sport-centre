@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="help-center">
+        <header>
+            <h1>{{ 'helpCenter.title' | transloco }}</h1>
+        </header>
+        <!-- faq icon -->
+        <a routerLink="/faq"><img [src]="'assets/helpCenter/faq.png'" alt="{{ 'helpCenter.icon1' | transloco }}" width="150" />{{ 'helpCenter.icon1' | transloco }}</a>
+        <!-- terms -->
+        <a routerLink="/terms"><img [src]="'assets/helpCenter/terms.png'" alt="{{ 'helpCenter.icon2' | transloco }}" width="150" />{{ 'helpCenter.icon2' | transloco }}</a>
+        <!-- privacy policy -->
+        <a routerLink="/privacy-policy"><img [src]="'assets/helpCenter/privacy-policy.png'" alt="{{ 'helpCenter.icon3' | transloco }}" width="150" />{{ 'helpCenter.icon3' | transloco }}</a>
+        <!-- contact us -->
+        <a class="mat-icon-button" routerLink="/contact"><img [src]="'assets/helpCenter/contact-us.png'" alt="{{ 'helpCenter.icon4' | transloco }}" width="150" />{{ 'helpCenter.icon4' | transloco }}</a>
+    </div>
+</div>

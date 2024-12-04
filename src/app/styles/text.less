@@ -1,0 +1,141 @@
+/* Container for the entire FAQ section */
+.container {
+  max-width: max;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: x-large;
+  color: #007BFF;
+}
+
+header p {
+  font-size: larger;
+  color: #007BFF;
+  margin-top: 8px;
+}
+
+header h3 {
+  font-size: medium;
+  color: rgb(102, 91, 91);
+  margin-top: 8px;
+}
+
+/* Section titles */
+section h1 {
+  font-size: large;
+  color: #007BFF;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+}
+
+section h2 {
+  font-size: large;
+  color: #007BFF;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+}
+
+/* Paragraph styles */
+section p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/* Bold text for specific sections */
+strong {
+  color: #007BFF;
+}
+
+
+/* Details styling */
+details {
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+details summary {
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px;
+  color: #007BFF;
+}
+
+details summary:hover {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+details p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/* Style for the strong tag inside summary */
+details summary strong {
+  color: #007BFF;
+}
+
+/* Ensure details is collapsed by default */
+details[open] summary {
+  background-color: #e6f0ff;
+}
+
+details[open] p {
+  padding-left: 20px;
+  background-color: #f4f9ff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a bit of spacing between sections */
+section {
+  margin-bottom: 30px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h1 {
+    font-size: 1.5rem;
+  }
+
+  details summary {
+    font-size: 1.1rem;
+  }
+
+  details p {
+    font-size: 0.95rem;
+  }
+}

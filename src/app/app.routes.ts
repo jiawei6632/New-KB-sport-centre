@@ -11,6 +11,7 @@ import { BookingSearchComponent } from './pages/booking/booking-search/booking-s
 import { ContactComponent } from './pages/support/contact/contact.component';
 import { FaqComponent } from './pages/support/faq/faq.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { HelpCenterComponent } from './functions/help-center/help-center.component';
 
 export const routes: Routes = [
     {
@@ -57,6 +58,10 @@ export const routes: Routes = [
                 path: "about-us",
                 component: AboutUsComponent,
             },
+            {
+                path: "help-center",
+                component: HelpCenterComponent
+            }
         ],
     },
     {

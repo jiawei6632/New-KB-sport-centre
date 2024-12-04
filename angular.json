@@ -33,8 +33,9 @@
               "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
               "src/styles.less",
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/primeflex/primeflex.css",
-              "src/themes/lara/lara-dark-blue.css",
+              "src/themes/lara/lara-light-blue.css",
               {
 								"input": "src/themes/lara/lara-light-blue.css",
 								"bundleName": "lara-blue",

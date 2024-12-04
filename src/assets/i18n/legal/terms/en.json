@@ -77,11 +77,8 @@
         },
         "content2": {
           "title": "Termination of Service",
-          "content1": {
-            "title": "Termination of Service",
-            "content1": "New KB Sport Center may, at its discretion, suspend or discontinue services temporarily or permanently. We will notify users in advance if possible."
-          }
-        }
+          "content1": "New KB Sport Center may, at its discretion, suspend or discontinue services temporarily or permanently. We will notify users in advance if possible."
+        }       
       },
       "section9": {
         "title": "9. Limitations of Liability",
@@ -95,7 +92,7 @@
         },
         "content2": {
           "title": "Arbitration",
-          "content": "Any disputes that cannot be resolved amicably will be handled through arbitration, and you agree to submit to the exclusive jurisdiction of the arbitration process."
+          "content1": "Any disputes that cannot be resolved amicably will be handled through arbitration, and you agree to submit to the exclusive jurisdiction of the arbitration process."
         }
       },
       "section11": {

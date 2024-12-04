@@ -77,10 +77,7 @@
       },
       "content2": {
         "title": "Penamatan Perkhidmatan",
-        "content1": {
-          "title": "Penamatan Perkhidmatan",
-          "content1": "New KB Sport Center boleh menggantung atau menamatkan perkhidmatan mengikut budi bicara mereka. Kami akan memberi notis terlebih dahulu, jika mungkin."
-        }
+        "content1": "New KB Sport Center boleh menggantung atau menamatkan perkhidmatan mengikut budi bicara mereka. Kami akan memberi notis terlebih dahulu, jika mungkin."
       }
     },
     "section9": {
@@ -95,7 +92,7 @@
       },
       "content2": {
         "title": "Arbitrasi",
-        "content": "Sebarang pertikaian yang tidak dapat diselesaikan secara baik akan diselesaikan melalui arbitrasi, dan anda bersetuju untuk memberi kuasa kepada bidang kuasa arbitrasi eksklusif."
+        "content1": "Sebarang pertikaian yang tidak dapat diselesaikan secara baik akan diselesaikan melalui arbitrasi, dan anda bersetuju untuk memberi kuasa kepada bidang kuasa arbitrasi eksklusif."
       }
     },
     "section11": {
