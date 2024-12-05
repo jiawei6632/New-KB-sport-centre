@@ -10,7 +10,8 @@
             "email": "Email address"
         },
         "phoneNum": {
-            "phoneNum": "Phone Number"
+            "phoneNum": "Phone Number",
+            "invalid": "Invalid Phone Number"
         },
         "message": {
             "message": "Your message"

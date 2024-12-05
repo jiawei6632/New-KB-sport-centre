@@ -1,3 +1,39 @@
-@import "src/app/styles/global.less";
-@import "src/app/styles/login-signup.less";
+.inputField {
+    margin-bottom: 20px;
+}
 
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.text-red-400 {
+    color: red;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .input-field {
+        width: 100%;
+    }
+}

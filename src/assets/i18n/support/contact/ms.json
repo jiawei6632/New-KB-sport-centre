@@ -10,7 +10,8 @@
             "email": "Alamat emel"
         },
         "phoneNum": {
-            "phoneNum": "Nombor Telefon"
+            "phoneNum": "Nombor Telefon",
+            "invalid": "Invalid Phone Number"
         },
         "message": {
             "message": "Mesej anda"

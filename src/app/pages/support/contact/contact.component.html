@@ -53,25 +53,31 @@
         <!-- PhoneNumber Field -->
         <div class="inputField">
             <label class="col-12">
-                {{ 'contact.phoneNum.phoneNum' | transloco }}<span class="text-red-400">*&nbsp;</span>
+              {{ 'contact.phoneNum.phoneNum' | transloco }}<span class="text-red-400">*&nbsp;</span>
             </label>
             <div class="input-field col-12">
-                <FxtPhoneNumberInput #Phone formControlName="PhoneNumber" [required]="true"></FxtPhoneNumberInput>
+                <input 
+                    type="tel" 
+                    id="phoneNum" 
+                    name="phoneNum" 
+                    formControlName="PhoneNumber"
+                    #phoneInput
+                />
                 <div *ngIf="Contactform.controls['PhoneNumber'].invalid && Contactform.controls['PhoneNumber'].touched" class="error-message">
                     <small *ngIf="Contactform.controls['PhoneNumber'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
-                    <small *ngIf="Contactform.controls['PhoneNumber'].errors?.['pattern']">{{ 'invalidPhoneNumber' | transloco }}</small>
-                </div>                  
+                    <small *ngIf="Contactform.controls['PhoneNumber'].errors?.['pattern']">{{ 'contact.phoneNum.invalid' | transloco }}</small>
+                </div>
             </div>
         </div>
+        
     
-        <!-- Message Field -->
-        <div class="inputField">
+        <div class="inputField input-column">
             <label class="col-12">
                 {{ 'contact.message.message' | transloco }}<span class="text-red-400">*&nbsp;</span>
             </label>
             <div class="input-field col-12">
                 <input 
-                    type="message" 
+                    type="text" 
                     id="message" 
                     name="message" 
                     formControlName="Message"
@@ -84,7 +90,7 @@
     
         <div class="Submit">
             <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="{{ 'contact.submit.submit' | transloco }}" 
-            styleClass="submit-btn" [outlined]="true" [disabled]="Contactform.invalid"></p-button>
+            styleClass="submit-btn" [outlined]="false" [disabled]="Contactform.invalid"></p-button>
         </div>
 
         <!-- imgField -->

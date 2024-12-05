@@ -10,7 +10,8 @@
             "email": "电子邮件地址"
         },
         "phoneNum": {
-            "phoneNum": "电话号码"
+            "phoneNum": "电话号码",
+            "invalid": "Invalid Phone Number"
         },
         "message": {
             "message": "您的留言"
