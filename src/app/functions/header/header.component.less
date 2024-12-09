@@ -29,8 +29,15 @@ a {
 .menu {
   padding-left: 10px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; // 元素分散对齐
+  align-items: center; // 垂直居中
+}
+
+.menu-actions {
+  display: flex;
+  justify-content: flex-end; // 元素靠右
+  align-items: center; // 垂直居中
+  gap: 15px; // 按钮间隔
 }
 
 :host::ng-deep i {

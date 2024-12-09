@@ -1,111 +1,111 @@
 
 <form [formGroup]="Contactform" (ngSubmit)="SaveUpdateClick()">
-        <!-- Close Button -->
-        <!-- <div class="CancelClick">
-            <p-button icon="pi pi-times" styleClass="p-button-text" (click)="CancelClick()"></p-button>
-        </div>
-     -->
-        <!-- contact header -->
-        <div class="head">
-            <h1>{{ 'contact.title' | transloco }}</h1>
-            <h5>{{ 'contact.text1' | transloco }}</h5>
-            <h5>{{ 'contact.text2' | transloco }}</h5>
-        </div>
+    <!-- Close Button -->
+    <!-- <div class="CancelClick">
+        <p-button icon="pi pi-times" styleClass="p-button-text" (click)="CancelClick()"></p-button>
+    </div>
+ -->
+    <!-- contact header -->
+    <div class="head">
+        <h1>{{ 'contact.title' | transloco }}</h1>
+        <h5>{{ 'contact.text1' | transloco }}</h5>
+        <h5>{{ 'contact.text2' | transloco }}</h5>
+    </div>
 
-        <!-- Name Field -->
-        <div class="inputField">
-            <label class="col-12">
-                {{ 'contact.name.name' | transloco }}<span class="text-red-400">*&nbsp;</span>
-            </label>
-            <div class="input-field col-12">
-                <input 
-                    type="name" 
-                    id="name" 
-                    name="name" 
-                    formControlName="Name"
-                />
-                <div *ngIf="Contactform.controls['Name'].invalid && Contactform.controls['Name'].touched" class="error-message">
-                    <small *ngIf="Contactform.controls['Name'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
-                </div>
+    <!-- Name Field -->
+    <div class="inputField">
+        <label class="col-12">
+            {{ 'contact.name.name' | transloco }}<span class="text-red-400">*&nbsp;</span>
+        </label>
+        <div class="input-field col-12">
+            <input 
+                type="name" 
+                id="name" 
+                name="name" 
+                formControlName="Name"
+            />
+            <div *ngIf="Contactform.controls['Name'].invalid && Contactform.controls['Name'].touched" class="error-message">
+                <small *ngIf="Contactform.controls['Name'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
             </div>
         </div>
-    
-        <!-- Email Field -->
-        <div class="inputField">
-            <label class="col-12">
-                {{ 'contact.email.email' | transloco }}<span class="text-red-400">*&nbsp;</span>
-            </label>
-            <div class="input-field col-12">
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    formControlName="Email"
-                    [ngClass]="{'invalid-input': Contactform.controls['Email'].invalid && Contactform.controls['Email'].touched}"
-                />
-                <div *ngIf="Contactform.controls['Email'].invalid && Contactform.controls['Email'].touched" class="error-message">
-                    <small *ngIf="Contactform.controls['Email'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
-                    <small *ngIf="Contactform.controls['Email'].errors?.['email']">{{ 'invalidEmail' | transloco }}</small>
-                </div>
-            </div>
-        </div>
-    
-        <!-- PhoneNumber Field -->
-        <div class="inputField">
-            <label class="col-12">
-              {{ 'contact.phoneNum.phoneNum' | transloco }}<span class="text-red-400">*&nbsp;</span>
-            </label>
-            <div class="input-field col-12">
-                <input 
-                    type="tel" 
-                    id="phoneNum" 
-                    name="phoneNum" 
-                    formControlName="PhoneNumber"
-                    #phoneInput
-                />
-                <div *ngIf="Contactform.controls['PhoneNumber'].invalid && Contactform.controls['PhoneNumber'].touched" class="error-message">
-                    <small *ngIf="Contactform.controls['PhoneNumber'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
-                    <small *ngIf="Contactform.controls['PhoneNumber'].errors?.['pattern']">{{ 'contact.phoneNum.invalid' | transloco }}</small>
-                </div>
-            </div>
-        </div>
-        
-    
-        <div class="inputField input-column">
-            <label class="col-12">
-                {{ 'contact.message.message' | transloco }}<span class="text-red-400">*&nbsp;</span>
-            </label>
-            <div class="input-field col-12">
-                <input 
-                    type="text" 
-                    id="message" 
-                    name="message" 
-                    formControlName="Message"
-                />
-                <div *ngIf="Contactform.controls['Message'].invalid && Contactform.controls['Message'].touched" class="error-message">
-                    <small *ngIf="Contactform.controls['Message'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
-                </div>
-            </div>
-        </div>
-    
-        <div class="Submit">
-            <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="{{ 'contact.submit.submit' | transloco }}" 
-            styleClass="submit-btn" [outlined]="false" [disabled]="Contactform.invalid"></p-button>
-        </div>
+    </div>
 
-        <!-- imgField -->
-        <div class="imgField">
-            <iframe
-                style="width: 550px; height: 550px;"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1719.7736731558964!2d101.72492882626497!3d3.2152552000000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20of%20Management%20and%20Technology%20(TAR%20UMT)!5e1!3m2!1sen!2smy!4v1695397980297!5m2!1sen!2smy"
-                width="600"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+    <!-- Email Field -->
+    <div class="inputField">
+        <label class="col-12">
+            {{ 'contact.email.email' | transloco }}<span class="text-red-400">*&nbsp;</span>
+        </label>
+        <div class="input-field col-12">
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                formControlName="Email"
+                [ngClass]="{'invalid-input': Contactform.controls['Email'].invalid && Contactform.controls['Email'].touched}"
+            />
+            <div *ngIf="Contactform.controls['Email'].invalid && Contactform.controls['Email'].touched" class="error-message">
+                <small *ngIf="Contactform.controls['Email'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+                <small *ngIf="Contactform.controls['Email'].errors?.['email']">{{ 'invalidEmail' | transloco }}</small>
+            </div>
         </div>
-    </form>
-  
+    </div>
+
+    <!-- PhoneNumber Field -->
+    <div class="inputField">
+        <label class="col-12">
+          {{ 'contact.phoneNum.phoneNum' | transloco }}<span class="text-red-400">*&nbsp;</span>
+        </label>
+        <div class="input-field col-12">
+            <input 
+                type="tel" 
+                id="phoneNum" 
+                name="phoneNum" 
+                formControlName="PhoneNumber"
+                #phoneInput
+            />
+            <div *ngIf="Contactform.controls['PhoneNumber'].invalid && Contactform.controls['PhoneNumber'].touched" class="error-message">
+                <small *ngIf="Contactform.controls['PhoneNumber'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+                <small *ngIf="Contactform.controls['PhoneNumber'].errors?.['pattern']">{{ 'contact.phoneNum.invalid' | transloco }}</small>
+            </div>
+        </div>
+    </div>
     
+
+    <div class="inputField input-column">
+        <label class="col-12">
+            {{ 'contact.message.message' | transloco }}<span class="text-red-400">*&nbsp;</span>
+        </label>
+        <div class="input-field col-12">
+            <textarea
+                class="no-resize"
+                type="text" 
+                id="message" 
+                name="message" 
+                formControlName="Message">
+            </textarea>
+            <div *ngIf="Contactform.controls['Message'].invalid && Contactform.controls['Message'].touched" class="error-message">
+                <small *ngIf="Contactform.controls['Message'].errors?.['required']">{{ 'requiredField' | transloco }}</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="Submit">
+        <p-button pRipple (click)="SaveUpdateClick()" type="submit" label="{{ 'contact.submit.submit' | transloco }}" 
+        styleClass="submit-btn" [outlined]="false" [disabled]="Contactform.invalid"></p-button>
+    </div>
+
+    <!-- imgField -->
+    <div class="imgField">
+        <iframe
+            style="width: 550px; height: 550px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1719.7736731558964!2d101.72492882626497!3d3.2152552000000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20of%20Management%20and%20Technology%20(TAR%20UMT)!5e1!3m2!1sen!2smy!4v1695397980297!5m2!1sen!2smy"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </div>
+</form>
+

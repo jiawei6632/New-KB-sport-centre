@@ -38,7 +38,22 @@ export class ContactComponent implements AfterViewInit {
     script.onload = () => {
       // Initialize intl-tel-input after the utils script is loaded
       const iti = intlTelInput(input, {
-        initialCountry: 'my', // Set default country to Malaysia (+60)
+        initialCountry: '', // Set default country to Malaysia (+60)
+      });
+
+      // Ensure the phone number field displays the correct country code on load
+      const defaultCountryCode = iti.getSelectedCountryData().dialCode;
+      input.value = `+${defaultCountryCode}`;
+      this.Contactform.get('PhoneNumber')?.setValue(`+${defaultCountryCode}`);
+
+      // Listen for country change event by using the input element's event
+      input.addEventListener('countrychange', () => {
+        // Get the selected country code
+        const countryCode = iti.getSelectedCountryData().dialCode;
+        // Set the phone input value with the country code
+        input.value = `+${countryCode}`;
+        // Update the form control value
+        this.Contactform.get('PhoneNumber')?.setValue(input.value);
       });
 
       // Listen for blur event to set the phone number in the form control
@@ -55,20 +70,20 @@ export class ContactComponent implements AfterViewInit {
   SaveUpdateClick() {
     if (this.Contactform.valid) {
       const phoneUtil = PhoneNumberUtil.getInstance();
-  
+
       let phoneNumber = this.Contactform.get('PhoneNumber')?.value;
-  
+
       if (!phoneNumber || phoneNumber === "") {
-        alert('Phone number is invalid or empty.');
+        alert('Invalid or empty phone number.');
         return;
       }
-  
+
       try {
         const parsedInput = phoneUtil.parseAndKeepRawInput(phoneNumber);
-      
+        
         if (phoneUtil.isValidNumber(parsedInput)) {
           const parsedNumber = phoneUtil.format(parsedInput, PhoneNumberFormat.E164);
-      
+
           if (this.Contactform.get('PhoneNumber')?.value !== parsedNumber) {
             this.Contactform.get('PhoneNumber')?.setValue(parsedNumber);
           }
@@ -76,19 +91,17 @@ export class ContactComponent implements AfterViewInit {
           alert('Invalid phone number.');
         }
       } catch (error: any) { 
-        alert('Error parsing phone number: ' + error.message);
+        alert(error.message);
       }
-      
     }
-  
+
     if (this.Contactform.valid) {
-      console.log('Form Data:', this.Contactform.value);
+      console.log('Form data:', this.Contactform.value);
     } else {
       console.log('Form is invalid');
-      alert('The form is either empty or contains invalid information. Please check the fields and try again.');
+      alert('The form is empty or contains invalid information. Please check the fields and try again.');
     }
   }
-  
 
   CancelClick() {
     this.Contactform.reset();

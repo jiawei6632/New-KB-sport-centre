@@ -9,26 +9,23 @@
     </ng-template>
     <ng-template pTemplate="end">
       <nav class="menu-actions">
-        <div class="flex justify-content-between w-full">
-          <!-- transloco -->
-          <div (click)="toggleDropdown($event)" class="dropdown-container">
-            <i class="pi pi-globe">{{ selectedLanguage }}</i> 
-            <div *ngIf="isDropdownVisible" class="dropdown-menu">
-              <ul>
-                <li *ngFor="let option of languageOptions" (click)="changeLanguage(option.value)">
-                  {{ option.label }} 
-                </li>
-              </ul>
-            </div>
+        <div (click)="toggleDropdown($event)" class="dropdown-container">
+          <i class="pi pi-globe">{{ selectedLanguage }}</i> 
+          <div *ngIf="isDropdownVisible" class="dropdown-menu">
+            <ul>
+              <li *ngFor="let option of languageOptions" (click)="changeLanguage(option.value)">
+                {{ option.label }} 
+              </li>
+            </ul>
           </div>
-          <!-- support button -->
-          <i class="pi pi-question-circle" routerLink="/help-center" style="color: rgb(81, 127, 224)"></i>
-          <!-- Sign Up Button -->
-          <a class="p-button p-button-outlined font-bold mr-2" routerLink="/sign-up">{{ 'signUp' | transloco }}</a>
-          <!-- Log In Button -->
-          <a class="p-button font-bold ml-3" routerLink="/log-in">{{ 'logIn' | transloco }}</a>
         </div>
+        
+        <i class="pi pi-question-circle" routerLink="/help-center" style="color: rgb(81, 127, 224)"></i>
+      
+        <a class="p-button p-button-outlined font-bold" routerLink="/sign-up">{{ 'signUp' | transloco }}</a>
+        <a class="p-button font-bold" routerLink="/log-in">{{ 'logIn' | transloco }}</a>
       </nav>
+      
     </ng-template>
   </p-menubar>
 </div>

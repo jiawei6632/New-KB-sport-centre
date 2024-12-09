@@ -32,11 +32,10 @@
             "styles": [
               "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
-              "src/styles.less",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.less",
               "node_modules/primeflex/primeflex.css",
               "node_modules/intl-tel-input/build/css/intlTelInput.css",
-              "src/themes/lara/lara-light-blue.css",
               {
 								"input": "src/themes/lara/lara-light-blue.css",
 								"bundleName": "lara-blue",
