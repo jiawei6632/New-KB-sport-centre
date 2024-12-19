@@ -1,0 +1,57 @@
+<!-- Theme Preset Selection -->
+<button>
+  <i class="pi pi-palette"
+  src="../../../../assets/theme.png"
+  alt=""
+  (click)="op.toggle($event)"
+  [style]="{ cursor: 'pointer' }"
+  sylesClass="bg-primary">
+</i>
+</button>
+
+<p-popover #op> 
+
+<div class="darkmode">
+  <h2>Dark Mode</h2>
+  <button pButton type="button" label="" (click)="toggleDarkMode()">
+    <i class="pi" [ngClass]="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"></i>
+  </button>
+</div>
+
+<p-divider></p-divider>
+
+<div class="theme">
+<h2>Theme</h2>
+<h4>Primary</h4>
+<div class="color-palette">
+  <div 
+    *ngFor="let item of Primary" 
+    class="color-circle"
+    [ngStyle]="{'background-color': item.color, 'border': currentPreset === item.id ? '2px solid #000' : ''}"
+    (click)="updatePrimaryColor(item.color)">
+  </div>
+</div>
+
+<!-- Surface Colors -->
+<!-- <h4>Surface</h4>
+<div class="color-palette">
+  <div 
+    *ngFor="let item of Surface" 
+    class="color-circle"
+    [ngStyle]="{'background-color': item.color, 'border': surfaceBackgroundColor === item.color ? '2px solid #000' : ''}"
+    (click)="updateSurfaceColor(item.color)">
+  </div>
+</div> -->
+<!-- 
+<div class="presets">
+  <h4>Presets</h4>
+  <p-button 
+    *ngFor="let preset of ['Aura', 'Material', 'Lara', 'Nora']"
+    [label]="preset"
+    [ngClass]="{'active': currentPreset === preset}"
+    (click)="changePreset(preset)">
+  </p-button>
+</div> -->
+</div>
+</p-popover>
+

@@ -1,11 +1,12 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenubarModule } from 'primeng/menubar';
-import { PrimeIcons, MenuItem } from 'primeng/api';
 import { DropdownModule } from 'primeng/dropdown'; 
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { ThemeComponent } from '../theme/theme.component';
+
 
 @Component({
   standalone: true,
@@ -16,7 +17,8 @@ import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
     FormsModule,
     CommonModule,
     TranslocoModule,
-  ],
+    ThemeComponent
+],
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.less'],

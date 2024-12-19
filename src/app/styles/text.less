@@ -3,7 +3,6 @@
   max-width: max;
   margin: 0 auto;
   padding: 20px;
-  background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -53,7 +52,6 @@ section h2 {
 /* Paragraph styles */
 section p {
   font-size: 1rem;
-  color: #555;
   margin-top: 10px;
   padding-left: 20px;
   line-height: 1.6;
@@ -68,7 +66,6 @@ strong {
 /* Details styling */
 details {
   margin-bottom: 10px;
-  background-color: #f9f9f9;
   padding: 12px;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -79,7 +76,7 @@ details summary {
   font-weight: bold;
   cursor: pointer;
   padding: 8px;
-  color: #007BFF;
+  color: #007BFF; 
 }
 
 details summary:hover {
@@ -89,7 +86,6 @@ details summary:hover {
 
 details p {
   font-size: 1rem;
-  color: #555;
   margin-top: 10px;
   padding-left: 20px;
   line-height: 1.6;
@@ -102,12 +98,11 @@ details summary strong {
 
 /* Ensure details is collapsed by default */
 details[open] summary {
-  background-color: #e6f0ff;
+  background-color: none;
 }
 
 details[open] p {
   padding-left: 20px;
-  background-color: #f4f9ff;
   border-radius: 4px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }

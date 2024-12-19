@@ -2,8 +2,8 @@ import { Routes } from '@angular/router';
 import { ManComponent } from './pages/man/man.component';
 import { LogInComponent } from './pages/logup/log-in/log-in.component';
 import { SignUpComponent } from './pages/logup/sign-up/sign-up.component';
-import { LayoutComponent } from './functions/layout/layout.component';
-import { NotfoundComponent } from './functions/notfound/notfound.component';
+import { LayoutComponent } from './shared/functions/layout/layout.component';
+import { NotfoundComponent } from './shared/functions/notfound/notfound.component';
 import { PersonalDetailsComponent } from './pages/personal-details/personal-details.component';
 import { PrivacyPolicyComponent } from './pages/legal/privacy-policy/privacy-policy.component';
 import { TermsComponent } from './pages/legal/terms/terms.component';
@@ -11,7 +11,7 @@ import { BookingSearchComponent } from './pages/booking/booking-search/booking-s
 import { ContactComponent } from './pages/support/contact/contact.component';
 import { FaqComponent } from './pages/support/faq/faq.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { HelpCenterComponent } from './functions/help-center/help-center.component';
+import { HelpCenterComponent } from './shared/functions/help-center/help-center.component';
 
 export const routes: Routes = [
     {

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ThemeComponent } from '../../functions/theme/theme.component';
+import { ThemeComponent } from '../../shared/functions/theme/theme.component';
+
+
 
 @Component({
   selector: 'app-man',
